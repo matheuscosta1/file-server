@@ -24,7 +24,7 @@
 
 int main(int argc, char *argv[]) {
 
-    struct dirent *myfile;
+    struct dirent *arquivoProcurado;
     struct stat mystat;
 
     if (argc != 6) {
@@ -51,7 +51,6 @@ int main(int argc, char *argv[]) {
 
     char* tipoTransacaoAuxiliar = argv[5];
     int tipoTransacao = atoi(tipoTransacaoAuxiliar);
-    printf("%s", tipoTransacaoAuxiliar);
 
     /*****************************************/
     /* Criando um _socket */
@@ -78,10 +77,11 @@ int main(int argc, char *argv[]) {
     servidor.sin_port = htons(portaServidor);
 
     //Conectando no servidor remoto
-    if (connect(_socket, (struct sockaddr *) &servidor, sizeof (servidor)) < 0) {
+    if (conexao = connect(_socket, (struct sockaddr *) &servidor, sizeof (servidor)) < 0) {
         printf("Nao foi possivel conectar\n");
         return -1;
     }
+    printf("socket: %d, conexao: %d", _socket, conexao);
     printf("Conectado no servidor\n");
     /*****************************************/
     /*******COMUNICAO - TROCA DE MENSAGENS **************/
@@ -106,7 +106,6 @@ int main(int argc, char *argv[]) {
             return NULL;
         }
         
-        printf("Tamanho do arquivo: %d\n", tamanho);
         for(int i=0; i < tamanho; i++){
             resposta[i] = mensagemEnviaNomeArquivoRequeridoParaServidor[i];
         }
@@ -130,16 +129,16 @@ int main(int argc, char *argv[]) {
 
             //funÃ§Ã£o busca todo o diretÃ³rio buscando o arquivo na variavel nomeArquivoAuxiliar
             //struct stat s;
-            while ((myfile = readdir(diretorioParaBuscarArquivo)) != NULL) {
+            while ((arquivoProcurado = readdir(diretorioParaBuscarArquivo)) != NULL) {
 
-                stat(myfile->d_name, &mystat);
+                stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", myfile->d_name, resposta, strcmp(myfile->d_name, resposta));
-                if (strcmp(myfile->d_name, resposta) == 0) {//arquivo existe
+                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", arquivoProcurado->d_name, resposta, strcmp(arquivoProcurado->d_name, resposta));
+                if (strcmp(arquivoProcurado->d_name, resposta) == 0) {//arquivo existe
                    printf("Arquivo existe lado do cliente");
                    closedir(diretorioParaBuscarArquivo);
                     //Reiniciando variÃ¡veis da pesquisa do diretorio para a proxima thread
-                    myfile = NULL;
+                    arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
                     diretorioParaBuscarArquivo = opendir(argv[3]);
 
@@ -148,6 +147,7 @@ int main(int argc, char *argv[]) {
                     //*************************************//
 
                     mensagem = "200";
+                    printf("mensagem %s", mensagem);
                     //mensagem 2 - enviando confirmação que arquivo existe do lado do cliente
                     write(_socket, mensagem, strlen(mensagem));
 
@@ -191,10 +191,10 @@ int main(int argc, char *argv[]) {
 
                     while (((bytesEnviados = sendfile(_socket, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
 
-                        fprintf(stdout, "[+] 1. Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         len -= bytesEnviados;
-                        fprintf(stdout, "[+] 2. Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         if (len <= 0) {
+                            fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             printf("[+] Cliente enviou todos os dados do arquivo com sucesso.\n");
                             printf("[+] Cliente terminando...\n");
                             exit(0);
@@ -205,14 +205,14 @@ int main(int argc, char *argv[]) {
                     //closedir(diretorioParaBuscarArquivo);
 
                 }
-            }if(myfile==NULL) {
+            }if(arquivoProcurado==NULL) {
                     //enviando mensagem para o cliente de arquivo nao encontrado.
                     mensagem = "404";//file not found
                     printf("\n//*********************************//\n");
                     printf("[-] Arquivo \"%s\" não existe no diretório: \"%s\"\n",nomeArquivoAuxiliar, argv[4]);
                     //mensagem 2 - enviando confirmaÃ§Ã£o q arquivo existe
                     write(_socket, mensagem, strlen(mensagem));
-                    //sempre que termina de pesquisar o diretorio de arquivos a variavel myfile vai para null
+                    //sempre que termina de pesquisar o diretorio de arquivos a variavel arquivoProcurado vai para null
                     // entao eh necessario preencher diretorioParaBuscarArquivo novamente com o argv[2] com o diretorio de pesquisa. 
                     //caso contrario novas thread nao acessaram o diretorio passado em argv[2]]
                     diretorioParaBuscarArquivo = opendir(argv[4]);
@@ -237,6 +237,7 @@ int main(int argc, char *argv[]) {
 
 
     pthread_t sniffer_thread;
+    int c = sizeof (struct sockaddr_in);
 
     switch (tipoTransacao){
         case 1:
@@ -300,17 +301,6 @@ int main(int argc, char *argv[]) {
             printf("Cliente finalizado com sucesso!\n");
             exit(0);
         case 2:
-            while(_socket == 0){
-                pthread_t thread;
-                novaConexao = (int) malloc(1);
-                novaConexao = _socket;
-
-                if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
-                    perror("[-] Não foi possível criar a thread.");
-                    return 1;
-                }
-                puts("[+] Conexão estabelecida");
-            }
             connection_handler(_socket);
             exit(0);
         default:

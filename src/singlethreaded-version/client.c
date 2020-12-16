@@ -24,7 +24,7 @@
 
 int main(int argc, char *argv[]) {
 
-    struct dirent *myfile;
+    struct dirent *arquivoProcurado;
     struct stat mystat;
 
     if (argc != 6) {
@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
     }
 
     // variaveis
-    int socket_desc, conexao, nova_conex;
+    int _socket, conexao, novaConexao;
     DIR *diretorioParaBuscarArquivo;
     struct sockaddr_in servidor;
 
@@ -51,17 +51,16 @@ int main(int argc, char *argv[]) {
 
     char* tipoTransacaoAuxiliar = argv[5];
     int tipoTransacao = atoi(tipoTransacaoAuxiliar);
-    printf("%s", tipoTransacaoAuxiliar);
 
     /*****************************************/
-    /* Criando um socket */
+    /* Criando um _socket */
     // AF_INET = ARPA INTERNET PROTOCOLS
     // SOCK_STREAM = orientado a conexao
     // 0 = protocolo padrao para o tipo escolhido -- TCP
-    socket_desc = socket(AF_INET, SOCK_STREAM, 0);
+    _socket = socket(AF_INET, SOCK_STREAM, 0);
 
-    if (socket_desc == -1) {
-        printf("Nao foi possivel criar socket\n");
+    if (_socket == -1) {
+        printf("Nao foi possivel criar _socket\n");
         return -1;
     }
 
@@ -70,27 +69,28 @@ int main(int argc, char *argv[]) {
     // familia ARPANET
     // Porta - hton = host to network short (2bytes)
 
-    char* aux1 = argv[2];
-    int portaServidor = atoi(aux1);
+    char* portaServidorAuxiliar = argv[2];
+    int portaServidor = atoi(portaServidorAuxiliar);
 
     servidor.sin_addr.s_addr = inet_addr(argv[1]);
     servidor.sin_family = AF_INET;
     servidor.sin_port = htons(portaServidor);
 
     //Conectando no servidor remoto
-    if (connect(socket_desc, (struct sockaddr *) &servidor, sizeof (servidor)) < 0) {
+    if (conexao = connect(_socket, (struct sockaddr *) &servidor, sizeof (servidor)) < 0) {
         printf("Nao foi possivel conectar\n");
         return -1;
     }
+    printf("socket: %d, conexao: %d", _socket, conexao);
     printf("Conectado no servidor\n");
     /*****************************************/
     /*******COMUNICAO - TROCA DE MENSAGENS **************/
     
     char *mensagemEnviaNomeArquivoRequeridoParaServidor;
-    char resposta_servidor[MAX_MSG];
+    char respostaServidor[MAX_MSG];
     int tamanho;
 
-    void *connection_handler(void *socket_desc) {
+    void *connection_handler(void *_socket) {
         char *mensagem;
         char resposta[MAX_MSG];
         int tamanho;
@@ -106,44 +106,39 @@ int main(int argc, char *argv[]) {
             return NULL;
         }
         
-        printf("tamanhoo: %d", tamanho);
         for(int i=0; i < tamanho; i++){
             resposta[i] = mensagemEnviaNomeArquivoRequeridoParaServidor[i];
         }
         resposta[tamanho] = '\0';
 
-        for(int i=0; i < tamanho; i++){
-            printf("indice: %d, resposta %c", i, resposta[i]);
-        }
-
-        if (send(socket_desc, resposta, strlen(resposta), 0) < 0) {
+        if (send(_socket, resposta, strlen(resposta), 0) < 0) {
             printf("Erro ao enviar nome do arquivo\n");
             return -1;
         }
 
-        printf("O cliente falou: %s\n", resposta);
+        printf("O cliente enviou nome do arquivo %s para o servidor\n", resposta);
 
-        char aux_nomeArquivo[MAX_MSG];
+        char nomeArquivoAuxiliar[MAX_MSG];
         //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
         // o arquivo no diretorio.
-        strncpy(aux_nomeArquivo, resposta, MAX_MSG);
-        //printf("ax_nomeArquivo: %s\n", aux_nomeArquivo);
+        strncpy(nomeArquivoAuxiliar, resposta, MAX_MSG);
+        //printf("ax_nomeArquivo: %s\n", nomeArquivoAuxiliar);
 
         /*********************************************************/
         if (diretorioParaBuscarArquivo != NULL) {
 
-            //funÃ§Ã£o busca todo o diretÃ³rio buscando o arquivo na variavel aux_nomeArquivo
+            //funÃ§Ã£o busca todo o diretÃ³rio buscando o arquivo na variavel nomeArquivoAuxiliar
             //struct stat s;
-            while ((myfile = readdir(diretorioParaBuscarArquivo)) != NULL) {
+            while ((arquivoProcurado = readdir(diretorioParaBuscarArquivo)) != NULL) {
 
-                stat(myfile->d_name, &mystat);
+                stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", myfile->d_name, resposta, strcmp(myfile->d_name, resposta));
-                if (strcmp(myfile->d_name, resposta) == 0) {//arquivo existe
+                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", arquivoProcurado->d_name, resposta, strcmp(arquivoProcurado->d_name, resposta));
+                if (strcmp(arquivoProcurado->d_name, resposta) == 0) {//arquivo existe
                    printf("Arquivo existe lado do cliente");
                    closedir(diretorioParaBuscarArquivo);
                     //Reiniciando variÃ¡veis da pesquisa do diretorio para a proxima thread
-                    myfile = NULL;
+                    arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
                     diretorioParaBuscarArquivo = opendir(argv[3]);
 
@@ -151,14 +146,13 @@ int main(int argc, char *argv[]) {
                     //      INICIO DO PROTOCOLO            //
                     //*************************************//
 
-
                     mensagem = "200";
-                    //mensagem 2 - enviando confirmaÃ§Ã£o q arquivo existe
-                    write(socket_desc, mensagem, strlen(mensagem));
+                    printf("mensagem %s", mensagem);
+                    //mensagem 2 - enviando confirmação que arquivo existe do lado do cliente
+                    write(_socket, mensagem, strlen(mensagem));
 
-                    //mensagem 3 - recebendo que arquivo OK do cliente
-                    //read(socket_desc, resposta, MAX_MSG);
-
+                    //mensagem 3 - recebendo que arquivo OK do servidor
+                    read(_socket, resposta, MAX_MSG);
 
                     //**************************************//
                     //      FIM DO PROTOCOLO               //
@@ -168,63 +162,63 @@ int main(int argc, char *argv[]) {
                     //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
                     // o arquivo no diretorio.
 
+                    char arquivo[1024]; 
+                    strncpy(arquivo, argv[4], 1024);
+                    strcat(arquivo, nomeArquivoAuxiliar);
 
-                    char localArquivo[1024]; 
-                    strncpy(localArquivo, argv[4], 1024);
-                    strcat(localArquivo,aux_nomeArquivo);
-
-                    FILE * f = fopen(localArquivo, "rb");
-                    if((fseek(f, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
-                    int len = (int) ftell(f);                   
+                    FILE * file = fopen(arquivo, "rb");
+                    if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
+                    int len = (int) ftell(file);                   
                     mensagem = (char*) len;
                     printf("Tamanho do arquivo: %d\n", len);
                     //convertendo o valor do tamanho do arquivo (int) para ser enviado em uma mensagem no scoket(char)
-                    char *p, text[32];
-                    int a = len;
-                    sprintf(text, "%d", len);
-                    mensagem = text;
+                    char tamanhoDoArquivoEmFormatoChar[32];
+                    sprintf(tamanhoDoArquivoEmFormatoChar, "%d", len);
+                    mensagem = tamanhoDoArquivoEmFormatoChar;
 
-                    //mensagem 4 - enviando o tamanho do arquivo
-                    send(socket_desc, mensagem, strlen(mensagem), 0);
+                    //mensagem 4 - enviando o tamanho do arquivo para o servidor
+                    send(_socket, mensagem, strlen(mensagem), 0);
 
-                    int fd = open(localArquivo, O_RDONLY);
+                    int fd = open(arquivo, O_RDONLY);
                     off_t offset = 0;
-                    int sent_bytes = 0;
-                    //localArquivo = NULL;
+                    int bytesEnviados = 0;
+                    //arquivo = NULL;
                     if (fd == -1) {
-                        fprintf(stderr, "Error opening file --> %s", strerror(errno));
+                        fprintf(stderr, "Erro ao abrir arquivo: %s", strerror(errno));
 
                         exit(EXIT_FAILURE);
                     }
 
-                    while (((sent_bytes = sendfile(socket_desc, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
+                    while (((bytesEnviados = sendfile(_socket, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
 
-                        fprintf(stdout, "1. Cliente enviou %d bytes do arquivo, offset Ã© agora : %d e os dados restantes = %d\n", sent_bytes, (int)offset, len);
-                        len -= sent_bytes;
-                        fprintf(stdout, "2. Cliente enviou %d bytes do arquivo, offset Ã© agora : %d e os dados restantes = %d\n", sent_bytes, (int)offset, len);
+                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                        len -= bytesEnviados;
                         if (len <= 0) {
-                            printf("Cliente enviou todos os dados do arquivo com sucesso");
-                            break;
+                            fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                            printf("[+] Cliente enviou todos os dados do arquivo com sucesso.\n");
+                            printf("[+] Cliente terminando...\n");
+                            exit(0);
                         }
+                    }
+                    while(1){
                     }
                     //closedir(diretorioParaBuscarArquivo);
 
                 }
-            }if(myfile==NULL) {
+            }if(arquivoProcurado==NULL) {
                     //enviando mensagem para o cliente de arquivo nao encontrado.
                     mensagem = "404";//file not found
                     printf("\n//*********************************//\n");
-                    printf("Arquivo \"%s\" não existe no diretório: \"%s\"\n",aux_nomeArquivo, argv[3]);
+                    printf("[-] Arquivo \"%s\" não existe no diretório: \"%s\"\n",nomeArquivoAuxiliar, argv[4]);
                     //mensagem 2 - enviando confirmaÃ§Ã£o q arquivo existe
-                    write(socket_desc, mensagem, strlen(mensagem));
-                    //sempre que termina de pesquisar o diretorio de arquivos a variavel myfile vai para null
+                    write(_socket, mensagem, strlen(mensagem));
+                    //sempre que termina de pesquisar o diretorio de arquivos a variavel arquivoProcurado vai para null
                     // entao eh necessario preencher diretorioParaBuscarArquivo novamente com o argv[2] com o diretorio de pesquisa. 
                     //caso contrario novas thread nao acessaram o diretorio passado em argv[2]]
-                    diretorioParaBuscarArquivo = opendir(argv[3]);
+                    diretorioParaBuscarArquivo = opendir(argv[4]);
                     //
-                    while (1) {
-                    }
-                    close(socket_desc);
+                    printf("[-] Cliente finalizando...\n");
+                    exit(0);
                     //closedir(diretorioParaBuscarArquivo);
 
             }
@@ -235,79 +229,79 @@ int main(int argc, char *argv[]) {
         }
 
         if (strcmp(resposta, "bye\n") == 0) {
-            close(socket_desc);
-            printf("Servidor finalizado...\n");
+            close(_socket);
+            printf("Cliente finalizado...\n");
             return NULL;
         }
     }
 
 
     pthread_t sniffer_thread;
+    int c = sizeof (struct sockaddr_in);
 
     switch (tipoTransacao){
         case 1:
             mensagemEnviaNomeArquivoRequeridoParaServidor = argv[3];
-            FILE *received_file;
-            received_file = fopen(argv[3], "w");
+            FILE *arquivoRecebido;
+            arquivoRecebido = fopen(argv[3], "w");
             ssize_t len;
             char buffer[BUFSIZ];
-            int aba;
+            int quantidadeDeBytesRestanteParaSerGravado;
 
             //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
             //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
-            if (send(socket_desc, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
+            if (send(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
                 printf("Erro ao enviar mensagemEnviaNomeArquivoRequeridoParaServidor\n");
                 return -1;
             }
             printf("Dados enviados %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
 
             memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
-            memset(resposta_servidor, 0, sizeof resposta_servidor);
+            memset(respostaServidor, 0, sizeof respostaServidor);
 
             //Recebendo resposta do servidor
             //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
-            if((tamanho = read(socket_desc, resposta_servidor, MAX_MSG)) < 0) {
+            if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
                 printf("Falha ao receber resposta\n");
                 return -1;
             }
 
-            printf("Resposta recebida: %s\n", resposta_servidor);
-            if (strcmp(resposta_servidor, "200") == 0) {
+            printf("Resposta recebida: %s\n", respostaServidor);
+            if (strcmp(respostaServidor, "200") == 0) {
 
                 mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
                 //mensagemEnviaNomeArquivoRequeridoParaServidor 3 enviado ok
-                write(socket_desc, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
+                write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
                 //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
-                memset(resposta_servidor, 0, sizeof resposta_servidor);
-                read(socket_desc, resposta_servidor, 1024);
+                memset(respostaServidor, 0, sizeof respostaServidor);
+                read(_socket, respostaServidor, 1024);
 
-                int tamanhoDoArquivo = atoi(resposta_servidor);
-                printf("\nTamanho do arquivo a ser copiado: %s \n", resposta_servidor);
-                aba = tamanhoDoArquivo;
+                int tamanhoDoArquivo = atoi(respostaServidor);
+                printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
+                quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
 
             }else{
-                fprintf(stderr, "Arquivo nao encontrado no servirdor'%s'\n", argv[3]);
-                close(socket_desc);
+                fprintf(stderr, "Arquivo não encontrado no servidor'%s'\n", argv[3]);
+                close(_socket);
                 printf("Cliente finalizado com sucesso!\n");
                 return 0;
             }
 
 
-            while (((len = recv(socket_desc, buffer, BUFSIZ, 0)) > 0)&& (aba > 0)) {
-                fwrite(buffer, sizeof (char), len, received_file);
-                aba -= len;
-                fprintf(stdout, "Recebidos %d bytes e aguardamos :- %d bytes\n", len, aba);
-                if (aba <= 0) {
+            while (((len = recv(_socket, buffer, BUFSIZ, 0)) > 0)&& (quantidadeDeBytesRestanteParaSerGravado > 0)) {
+                fwrite(buffer, sizeof (char), len, arquivoRecebido);
+                quantidadeDeBytesRestanteParaSerGravado -= len;
+                fprintf(stdout, "Recebidos %d bytes e aguardamos :- %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
+                if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
                     break;
                 }
             }
-            fclose(received_file);
-            close(socket_desc);
+            fclose(arquivoRecebido);
+            close(_socket);
             printf("Cliente finalizado com sucesso!\n");
             exit(0);
         case 2:
-            printf("Opção 2");
-            connection_handler(socket_desc);
+            connection_handler(_socket);
             exit(0);
         default:
             printf("Waiting..");

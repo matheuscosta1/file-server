@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
 
     //Variaveis auxiliares para encontrar o arquivo a ser transferido.
     DIR *diretorioParaBuscarArquivo;
-    struct dirent *myfile;
+    struct dirent *arquivoProcurado;
     struct stat mystat;
     //verificando se foi executando o comando corretamente
     if (argc != 4) {
@@ -108,15 +108,15 @@ int main(int argc, char* argv[]) {
 
             //funÃ§Ã£o busca todo o diretÃ³rio buscando o arquivo na variavel nomeArquivoAuxiliar
             //struct stat s;
-            while ((myfile = readdir(diretorioParaBuscarArquivo)) != NULL) {
+            while ((arquivoProcurado = readdir(diretorioParaBuscarArquivo)) != NULL) {
 
-                stat(myfile->d_name, &mystat);
+                stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s\n", myfile->d_name, resposta);
-                if (strcmp(myfile->d_name, resposta) == 0) {//arquivo existe
+                printf("Arquivo lido: %s, Arquivo procurado: %s\n", arquivoProcurado->d_name, resposta);
+                if (strcmp(arquivoProcurado->d_name, resposta) == 0) {//arquivo existe
                    closedir(diretorioParaBuscarArquivo);
                     //Reiniciando variÃ¡veis da pesquisa do diretorio para a proxima thread
-                    myfile = NULL;
+                    arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
                     diretorioParaBuscarArquivo = opendir(argv[2]);
 
@@ -171,10 +171,10 @@ int main(int argc, char* argv[]) {
 
                     while (((bytesEnviados = sendfile(conexao, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
 
-                        fprintf(stdout, "1. Servidor enviou %d bytes do arquivo, offset Ã© agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                        fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         len -= bytesEnviados;
-                        fprintf(stdout, "2.Servidor enviou %d bytes do arquivo, offset Ã© agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         if (len <= 0) {
+                            fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             break;
                         }
                     }
@@ -183,14 +183,14 @@ int main(int argc, char* argv[]) {
                     }
 
                 }
-            }if(myfile==NULL) {
+            }if(arquivoProcurado==NULL) {
                     //enviando mensagem para o cliente de arquivo nao encontrado.
                     mensagem = "404";//file not found
                     printf("\n//*********************************//\n");
                     printf("Arquivo \"%s\" não existe no diretório: \"%s\"\n",nomeArquivoAuxiliar, argv[2]);
                     //mensagem 2 - enviando confirmaÃ§Ã£o q arquivo existe
                     write(conexao, mensagem, strlen(mensagem));
-                    //sempre que termina de pesquisar o diretorio de arquivos a variavel myfile vai para null
+                    //sempre que termina de pesquisar o diretorio de arquivos a variavel arquivoProcurado vai para null
                     // entao eh necessario preencher diretorioParaBuscarArquivo novamente com o argv[2] com o diretorio de pesquisa. 
                     //caso contrario novas thread nao acessaram o diretorio passado em argv[2]]
                     diretorioParaBuscarArquivo = opendir(argv[2]);
