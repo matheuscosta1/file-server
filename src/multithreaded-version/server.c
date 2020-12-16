@@ -174,7 +174,7 @@ int main(int argc, char* argv[]) {
                         fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         len -= bytesEnviados;
                         if (len <= 0) {
-                            fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                            fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             break;
                         }
                     }
@@ -214,6 +214,65 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    void *connection_client(void *conexao){
+        char respostaServidor[MAX_MSG];
+        int tamanho;
+        char *mensagemEnviaNomeArquivoRequeridoParaServidor;
+        if ((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
+            perror("[-] Erro ao receber dados do cliente.");
+            return NULL;
+        }
+        printf("[+] Servidor recebeu o nome do arquivo a ser gravado: %s.\n", respostaServidor);
+        
+        FILE *arquivoRecebido;
+        arquivoRecebido = fopen(respostaServidor, "w");
+        ssize_t len;
+        char buffer[BUFSIZ];
+        int quantidadeDeBytesRestanteParaSerGravado;
+
+        memset(arquivoRecebido, 0, sizeof arquivoRecebido);
+        memset(respostaServidor, 0, sizeof respostaServidor);
+
+        //Recebendo resposta do servidor
+        //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
+        if((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
+            printf("[-] Falha ao receber resposta\n");
+            return -1;
+        }
+
+        printf("[+] Status: %s da existência do arquivo do lado do cliente.\n", respostaServidor);
+        if (strcmp(respostaServidor, "200") == 0) {
+
+            mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
+            //mensagemEnviaNomeArquivoRequeridoParaServidor 3 enviado ok
+            write(conexao, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
+            //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
+            memset(respostaServidor, 0, sizeof respostaServidor);
+            read(conexao, respostaServidor, 1024);
+
+            int tamanhoDoArquivo = atoi(respostaServidor);
+            printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
+            quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
+
+        }else{
+            fprintf(stderr, "[-] Arquivo não encontrado no cliente.\n");
+        }
+
+        while (((len = recv(conexao, buffer, BUFSIZ, 0)) > 0) && (quantidadeDeBytesRestanteParaSerGravado > 0)) {
+            fwrite(buffer, sizeof (char), len, arquivoRecebido);
+            quantidadeDeBytesRestanteParaSerGravado -= len;
+            fprintf(stdout, "Recebidos %d bytes e aguardando: %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
+            if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
+                break;
+            }
+        }
+        fclose(arquivoRecebido);
+        close(conexao);
+        if (strcmp(respostaServidor, "200") == 0){
+            printf("[+] Servidor recebeu arquivo %s com sucesso!\n", arquivoRecebido);
+        }
+    }
+
     //*********************************************************************//
     //      FIM DO TRATAMENTO DA THREAD, localizaÃ§Ã£o e transferencia    // 
     //      do arquivo.                                                    // 
@@ -250,9 +309,6 @@ int main(int argc, char* argv[]) {
 
     puts("[+] Aguardando por conexões...");
     c = sizeof (struct sockaddr_in);
-    char respostaServidor[MAX_MSG];
-    int tamanho;
-    char *mensagemEnviaNomeArquivoRequeridoParaServidor;
     
     switch (tipoTransacao){
         case 1:
@@ -279,67 +335,22 @@ int main(int argc, char* argv[]) {
         case 2:
             while ((conexao = accept(_socket, (struct sockaddr *) &cliente, (socklen_t*) & c))) {
                 if (conexao < 0) {
-                    perror("[+] Erro ao estabelecer conexão.\n");
+                    perror("Erro ao receber conexao\n");
                     return -1;
                 }
 
-                if ((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
-                    perror("[-] Erro ao receber dados do cliente.");
-                    return NULL;
+                pthread_t thread;
+                novaConexao = (int) malloc(1);
+                novaConexao = conexao;
+
+                if (pthread_create(&thread, NULL, connection_client, (void*) novaConexao) < 0) {
+                    perror("[-] Não foi possível criar a thread.");
+                    return 1;
                 }
-                printf("[+] Servidor recebeu o nome do arquivo a ser gravado: %s.\n", respostaServidor);
-               
-                FILE *arquivoRecebido;
-                arquivoRecebido = fopen(respostaServidor, "w");
-                ssize_t len;
-                char buffer[BUFSIZ];
-                int quantidadeDeBytesRestanteParaSerGravado;
-                int tamanho;
-
-                memset(arquivoRecebido, 0, sizeof arquivoRecebido);
-                memset(respostaServidor, 0, sizeof respostaServidor);
-
-                //Recebendo resposta do servidor
-                //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
-                if((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
-                    printf("[-] Falha ao receber resposta\n");
-                    return -1;
-                }
-
-                printf("[+] Status: %s da existência do arquivo do lado do cliente.\n", respostaServidor);
-                if (strcmp(respostaServidor, "200") == 0) {
-
-                    mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
-                    //mensagemEnviaNomeArquivoRequeridoParaServidor 3 enviado ok
-                    write(conexao, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
-                    //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
-                    memset(respostaServidor, 0, sizeof respostaServidor);
-                    read(conexao, respostaServidor, 1024);
-
-                    int tamanhoDoArquivo = atoi(respostaServidor);
-                    printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
-                    quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
-
-                }else{
-                    fprintf(stderr, "[-] Arquivo não encontrado no cliente.\n");
-                }
-
-                while (((len = recv(conexao, buffer, BUFSIZ, 0)) > 0) && (quantidadeDeBytesRestanteParaSerGravado > 0)) {
-                    fwrite(buffer, sizeof (char), len, arquivoRecebido);
-                    quantidadeDeBytesRestanteParaSerGravado -= len;
-                    fprintf(stdout, "Recebidos %d bytes e aguardando: %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
-                    if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
-                        break;
-                    }
-                }
-                fclose(arquivoRecebido);
-                close(conexao);
-                if (strcmp(respostaServidor, "200") == 0){
-                    printf("[+] Servidor recebeu arquivo %s com sucesso!\n", arquivoRecebido);
-                }
+                puts("[+] Conexão estabelecida");
             }
             if (novaConexao < 0) {
-                perror("[-] Não foi possível estabelecer conexão.");
+                perror("[-] Não foi possível estabelecer conexão com o cliente.");
                 return 1;
             }
         default:
