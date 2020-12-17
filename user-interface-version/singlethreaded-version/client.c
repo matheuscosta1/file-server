@@ -12,7 +12,6 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <readline/readline.h>
 
 #define MAX_MSG 1024
 #define BADKEY -1
@@ -39,18 +38,6 @@ int keyfromstring(char *key)
             return key_value->val;
     }
     return BADKEY;
-}
-
-int readInput(char* str) {
-    char* buf;
-
-    buf = readline("\ninput$ ");
-    if (strlen(buf) != 0) {
-        strcpy(str, buf);
-        return 0;
-    } else {
-        return 1;
-    }
 }
 
 /*
@@ -119,15 +106,26 @@ int main(int argc, char *argv[]) {
         int tamanho;
         char diretorioArquivo[50];
         char mensagemEnviaNomeArquivoRequeridoParaServidor[50];
-        
         diretorioParaBuscarArquivo = opendir(diretorio);
 
-        if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Argumento invalido '%s'\n", diretorio);return -1;}
+        tamanho = strlen(arquivo);
 
+        for(int i=0; i < tamanho; i++){
+            printf("[%c]\n", arquivo[i]);
+            resposta[i] = arquivo[i];
+        }
+        resposta[tamanho] = '\0';
+        for(int i=0; i < tamanho; i++){
+            printf("[%c]\n", resposta[i]);
+        }
+        printf("resposta: %s, %s", resposta, arquivo);
+
+        if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Argumento invalido '%s'\n", diretorio);return -1;}
+        
         char nomeArquivoAuxiliar[MAX_MSG];
         //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
         // o arquivo no diretorio.
-        strncpy(nomeArquivoAuxiliar, arquivo, MAX_MSG);
+        strncpy(nomeArquivoAuxiliar, resposta, MAX_MSG);
         //printf("ax_nomeArquivo: %s\n", nomeArquivoAuxiliar);
 
         /*********************************************************/
@@ -139,10 +137,10 @@ int main(int argc, char *argv[]) {
 
                 stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", arquivoProcurado->d_name, arquivo, strcmp(arquivoProcurado->d_name, arquivo));
-                if (strcmp(arquivoProcurado->d_name, arquivo) == 0) {//arquivo existe
-                   printf("Arquivo existe lado do cliente");
-                   closedir(diretorioParaBuscarArquivo);
+                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", arquivoProcurado->d_name, resposta, strcmp(arquivoProcurado->d_name, resposta));
+                if (strcmp(arquivoProcurado->d_name, resposta) == 0) {//arquivo existe
+                    printf("Arquivo existe lado do cliente");
+                    closedir(diretorioParaBuscarArquivo);
                     //Reiniciando variÃ¡veis da pesquisa do diretorio para a proxima thread
                     arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
@@ -158,7 +156,7 @@ int main(int argc, char *argv[]) {
                     write(_socket, mensagem, strlen(mensagem));
 
                     //mensagem 3 - recebendo que arquivo OK do servidor
-                    read(_socket, arquivo, MAX_MSG);
+                    read(_socket, resposta, MAX_MSG);
 
                     //**************************************//
                     //      FIM DO PROTOCOLO               //
@@ -168,11 +166,11 @@ int main(int argc, char *argv[]) {
                     //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
                     // o arquivo no diretorio.
 
-                    char arquivo[1024]; 
-                    strncpy(arquivo, diretorio, 1024);
-                    strcat(arquivo, nomeArquivoAuxiliar);
+                    char abrirArquivo[1024]; 
+                    strncpy(abrirArquivo, diretorio, 1024);
+                    strcat(abrirArquivo, nomeArquivoAuxiliar);
 
-                    FILE * file = fopen(arquivo, "rb");
+                    FILE * file = fopen(abrirArquivo, "rb");
                     if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
                     int len = (int) ftell(file);                   
                     mensagem = (char*) len;
@@ -185,7 +183,7 @@ int main(int argc, char *argv[]) {
                     //mensagem 4 - enviando o tamanho do arquivo para o servidor
                     send(_socket, mensagem, strlen(mensagem), 0);
 
-                    int fd = open(arquivo, O_RDONLY);
+                    int fd = open(abrirArquivo, O_RDONLY);
                     off_t offset = 0;
                     int bytesEnviados = 0;
                     //arquivo = NULL;
@@ -244,10 +242,11 @@ int main(int argc, char *argv[]) {
     char post_ou_get[50];
     char arquivo[50];
     char diretorio[50];
+    int flag = 1;
     if(conexao == 0){
         printf("Seja bem vindo ao servidor de arquivos!\n");
         printf("Operações disponíveis para efetuar no servidor: POST/GET\n");
-        while(1){
+        while(flag){
             
             printf("Use: [METODO POST OU GET] [DIRETORIO] [ARQUIVO]:\n\n");
             printf("input$ ");
@@ -333,7 +332,8 @@ int main(int argc, char *argv[]) {
                     fclose(arquivoRecebido);
                     close(_socket);
                     printf("Cliente finalizado com sucesso!\n");
-                    exit(0);
+                    flag = 0;
+                    break;
                 case(2):
                     if (send(_socket, post_ou_get, strlen(post_ou_get), 0) < 0) {
                         printf("Erro ao enviar post_ou_get\n");
@@ -348,10 +348,13 @@ int main(int argc, char *argv[]) {
                         printf("Erro ao enviar nome do arquivo para o servidor.\n");
                         return -1;
                     }
+                    
+                    memset(respostaServidor, 0, sizeof respostaServidor);
 
                     printf("O cliente enviou nome do arquivo %s para o servidor\n", arquivo);
                 
                     connection_handler(_socket, arquivo, diretorio);
+                    flag = 0;
                     break;            
                 }
         }
