@@ -328,8 +328,6 @@ int main(int argc, char* argv[]) {
     while ((conexao = accept(_socket, (struct sockaddr *) &cliente, (socklen_t*) & c))){
         int tamanho;
         
-        printf("cliente conectou:");
-
         // lendo dados enviados pelo cliente
         //mensagem 1 recebido nome do arquivo   
         if ((tamanho = read(conexao, mensagem_post_ou_get, MAX_MSG)) < 0) {
@@ -338,7 +336,7 @@ int main(int argc, char* argv[]) {
         }
         
         mensagem_post_ou_get[tamanho] = '\0';
-        printf("O cliente falou: %s\n", mensagem_post_ou_get);
+        printf("O cliente falou sobre o Método: %s, %d\n", mensagem_post_ou_get, keyfromstring(mensagem_post_ou_get));
 
         //verificando se o diretorio existe
         if(keyfromstring(mensagem_post_ou_get) == 1){
@@ -351,14 +349,14 @@ int main(int argc, char* argv[]) {
             if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Diretório %s não existe.\n", respostaNomeDiretorio);return -1;}
             printf("\nO cliente falou sobre nome do diretório: %s\n", respostaNomeDiretorio);
         }
-        
 
         switch(keyfromstring(mensagem_post_ou_get)){
             case 1:
+                
                 if (conexao < 0) {
-                        perror("Erro ao receber conexao\n");
-                        return -1;
-                    }
+                    perror("Erro ao receber conexao\n");
+                    return -1;
+                }
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
@@ -367,7 +365,7 @@ int main(int argc, char* argv[]) {
                     perror("[-] Não foi possível criar a thread.");
                     return 1;
                 }
-                puts("[+] Conexão estabelecida");
+                puts("[+] GET: Conexão estabelecida");
 
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");
@@ -376,7 +374,7 @@ int main(int argc, char* argv[]) {
                 break;
             case 2:
                 if (conexao < 0) {
-                    perror("Erro ao receber conexao\n");
+                    perror("[-] Erro ao receber conexao\n");
                     return -1;
                 }
 
@@ -387,8 +385,8 @@ int main(int argc, char* argv[]) {
                     perror("[-] Não foi possível criar a thread.");
                     return 1;
                 }
-                puts("[+] Conexão estabelecida");
-
+                puts("[+] POST: Conexão estabelecida");
+            
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");
                     return 1;
