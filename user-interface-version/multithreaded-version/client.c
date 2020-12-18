@@ -327,6 +327,7 @@ int main(int argc, char *argv[]) {
                                     // memset(respostaServidor, 0, sizeof respostaServidor);
                                     printf("Aqui 2");
                                     mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
+                                    printf("oka: %s", mensagemEnviaNomeArquivoRequeridoParaServidor);
                                     write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
 
                                     uint32_t received_int;
@@ -349,10 +350,10 @@ int main(int argc, char *argv[]) {
                                     }
                                 }
                                 fclose(arquivoRecebido);
-                                close(_socket);
+                                shutdown(conexao, SHUT_RDWR);
+                                close(conexao);
                                 printf("Cliente finalizado com sucesso!\n");
-                                flag = 0;
-                                break;
+                                exit(0);
                             }
                         }
                     }
