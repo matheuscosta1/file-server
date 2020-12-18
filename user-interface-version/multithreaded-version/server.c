@@ -108,14 +108,16 @@ int main(int argc, char* argv[]) {
         }
         respostaNomeArquivo[tamanho] = '\0';
         printf("\nO cliente falou sobre o arquivo: %s\n", respostaNomeArquivo);
+        
+        mensagem = "200";
+        write(conexao, mensagem, strlen(mensagem));
+        printf("O servidor falou sobre ter recebido o nome do arquivo para o cliente: %s\n", mensagem);
 
         char nomeArquivoAuxiliar[MAX_MSG];
         //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
         // o arquivo no diretorio.
         strncpy(nomeArquivoAuxiliar, respostaNomeArquivo, MAX_MSG);
         //printf("ax_nomeArquivo: %s\n", nomeArquivoAuxiliar);
-
-
 
         /*********************************************************/
         if (diretorioParaBuscarArquivo != NULL) {
@@ -128,7 +130,8 @@ int main(int argc, char* argv[]) {
 
                 printf("Arquivo lido: %s, Arquivo procurado: %s\n", arquivoProcurado->d_name, respostaNomeArquivo);
                 if (strcmp(arquivoProcurado->d_name, respostaNomeArquivo) == 0) {//arquivo existe
-                   closedir(diretorioParaBuscarArquivo);
+                    printf("Chegou aquii.");
+                    closedir(diretorioParaBuscarArquivo);
                     //Reiniciando variÃ¡veis da pesquisa do diretorio para a proxima thread
                     arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
@@ -159,7 +162,7 @@ int main(int argc, char* argv[]) {
                     strcat(arquivo, nomeArquivoAuxiliar);
 
                     FILE * file = fopen(arquivo, "rb");
-                    if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
+                    if((fseek(file, 0, SEEK_END))<0){ printf("ERRO DURANTE fseek"); }
                     int len = (int) ftell(file);                   
                     mensagem = (char*) len;
                     printf("Tamanho do arquivo: %d\n", len);
@@ -324,10 +327,12 @@ int main(int argc, char* argv[]) {
     puts("[+] Aguardando por conexões...");
     c = sizeof (struct sockaddr_in);
     pthread_t thread;
+    char *enviaMensagemParaCliente;
 
     while ((conexao = accept(_socket, (struct sockaddr *) &cliente, (socklen_t*) & c))){
         int tamanho;
-        
+        char respostaServidor[50];
+        char *mensagem;
         // lendo dados enviados pelo cliente
         //mensagem 1 recebido nome do arquivo   
         if ((tamanho = read(conexao, mensagem_post_ou_get, MAX_MSG)) < 0) {
@@ -336,7 +341,12 @@ int main(int argc, char* argv[]) {
         }
         
         mensagem_post_ou_get[tamanho] = '\0';
-        printf("O cliente falou sobre o Método: %s, %d\n", mensagem_post_ou_get, keyfromstring(mensagem_post_ou_get));
+        printf("O cliente falou sobre o Método: %s, tamanho %d\n", mensagem_post_ou_get, tamanho);
+
+        mensagem = "200";
+        //mensagem 2 - enviando confirmação que arquivo existe do lado do cliente
+        write(conexao, mensagem, strlen(mensagem));
+        printf("O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: %s\n", mensagem);
 
         //verificando se o diretorio existe
         if(keyfromstring(mensagem_post_ou_get) == 1){
@@ -348,6 +358,8 @@ int main(int argc, char* argv[]) {
             diretorioParaBuscarArquivo = opendir(respostaNomeDiretorio);
             if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Diretório %s não existe.\n", respostaNomeDiretorio);return -1;}
             printf("\nO cliente falou sobre nome do diretório: %s\n", respostaNomeDiretorio);
+            write(conexao, mensagem, strlen(mensagem));
+            printf("\nO servidor falou sobre que recebeu o nome do diretório: %s\n", mensagem);
         }
 
         switch(keyfromstring(mensagem_post_ou_get)){
