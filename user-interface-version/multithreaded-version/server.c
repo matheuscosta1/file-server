@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
     int cliente_port;
 
     void *connection_handler(void *_socket) {
-        char *mensagem;
+        char *mensagem, *mensagemArquivoExiste;
         char respostaNomeArquivo[MAX_MSG];
         int tamanho;
 
@@ -114,9 +114,12 @@ int main(int argc, char* argv[]) {
                     mensagem = "200";
                     //mensagem 2 - enviando confirmação que arquivo existe
                     write(conexao, mensagem, strlen(mensagem));
+                    printf("Servidor falou pro cliente que o arquivo existe: %s", mensagem);
 
                     //mensagem 3 - recebendo que arquivo OK do cliente
-                    read(conexao, respostaNomeArquivo, MAX_MSG);
+                    read(conexao, mensagemArquivoExiste, MAX_MSG);
+                    printf("Servidor falou pro cliente que o arquivo existe: %s", mensagemArquivoExiste);
+
 
                     char arquivo[1024]; 
                     strncpy(arquivo, respostaNomeDiretorio, 1024);

@@ -214,8 +214,10 @@ int main(int argc, char *argv[]) {
                     //caso contrario novas thread nao acessaram o diretorio passado em argv[2]]
                     diretorioParaBuscarArquivo = opendir(diretorio);
                     //
+                    while (1) {
+                    }
                     printf("[-] Cliente finalizando...\n");
-                    exit(0);
+                    close(_socket);
                     //closedir(diretorioParaBuscarArquivo);
             }
 
@@ -260,7 +262,7 @@ int main(int argc, char *argv[]) {
                         printf("Erro ao enviar post_ou_get\n");
                         return -1;
                     }
-                    printf("Dados enviados do cliente para o servidor sobre o método get ou post %s\n", post_ou_get);
+                    printf("Dados enviados %s\n", post_ou_get);
 
                     memset(respostaServidor, 0, sizeof respostaServidor);
 
@@ -290,7 +292,6 @@ int main(int argc, char *argv[]) {
                         printf("Resposta recebida do servidor sobre o nome do diretório: %s\n", respostaServidor);
 
                         if(strcmp(respostaServidor, mensagemEnviaNomeDiretorioParaServidor) == 0){
-                            memset(respostaServidor, 0, sizeof respostaServidor);
                             //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
                             //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
                             if (send(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
@@ -298,7 +299,9 @@ int main(int argc, char *argv[]) {
                                 return -1;
                             }
                             printf("Cliente envia nome do arquivo: %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
+
                             memset(respostaServidor, 0, sizeof respostaServidor);
+                            
                             if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
                                 printf("Falha ao receber resposta\n");
                                 return -1;
@@ -318,20 +321,17 @@ int main(int argc, char *argv[]) {
                                     return -1;
                                 }
 
-                                printf("Resposta recebida: %s\n", respostaServidor);
+                                printf("Resposta recebida: %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
                                 if (strcmp(respostaServidor, "200") == 0) {
-
+                                    // memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
+                                    // memset(respostaServidor, 0, sizeof respostaServidor);
+                                    printf("Aqui 2");
                                     mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
-                                    //mensagemEnviaNomeArquivoRequeridoParaServidor 3 enviado ok
                                     write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
-                                    //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
-                                    memset(respostaServidor, 0, sizeof respostaServidor);
-                                    read(_socket, respostaServidor, 1024);
 
-                                    int tamanhoDoArquivo = atoi(respostaServidor);
-                                    printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
-                                    quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
-
+                                    uint32_t received_int;
+                                    read(_socket, &received_int, sizeof(received_int));
+                                    quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int); 
                                 }else{
                                     fprintf(stderr, "Arquivo não encontrado no servidor'%s'\n", diretorio);
                                     close(_socket);
@@ -351,6 +351,7 @@ int main(int argc, char *argv[]) {
                                 fclose(arquivoRecebido);
                                 close(_socket);
                                 printf("Cliente finalizado com sucesso!\n");
+                                flag = 0;
                                 break;
                             }
                         }
@@ -392,12 +393,11 @@ int main(int argc, char *argv[]) {
                             connection_handler(_socket, arquivo, diretorio);
                             break;
                         }            
-                    }
-
-                                        
-                }
+                    }                   
+            }
         }
     }
-
+    
     return 0;
+
 }
