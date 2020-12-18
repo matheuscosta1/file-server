@@ -15,6 +15,7 @@
 #include <sys/sendfile.h>
 #include <ctype.h>
 #include <pthread.h>
+#include <assert.h>
 
 void *connection_handler(void *);
 
@@ -42,6 +43,54 @@ int keyfromstring(char *key)
             return key_value->val;
     }
     return BADKEY;
+}
+
+char** str_split(char* a_str, const char a_delim)
+{
+    char** result    = 0;
+    size_t count     = 0;
+    char* tmp        = a_str;
+    char* last_comma = 0;
+    char delim[2];
+    delim[0] = a_delim;
+    delim[1] = 0;
+
+    /* Count how many elements will be extracted. */
+    while (*tmp)
+    {
+        if (a_delim == *tmp)
+        {
+            count++;
+            last_comma = tmp;
+        }
+        tmp++;
+    }
+
+    /* Add space for trailing token. */
+    count += last_comma < (a_str + strlen(a_str) - 1);
+
+    /* Add space for terminating null string so caller
+       knows where the list of returned strings ends. */
+    count++;
+
+    result = malloc(sizeof(char*) * count);
+
+    if (result)
+    {
+        size_t idx  = 0;
+        char* token = strtok(a_str, delim);
+
+        while (token)
+        {
+            assert(idx < count);
+            *(result + idx++) = strdup(token);
+            token = strtok(0, delim);
+        }
+        assert(idx == count - 1);
+        *(result + idx) = 0;
+    }
+
+    return result;
 }
 
 /*
@@ -163,18 +212,13 @@ int main(int argc, char* argv[]) {
 
                     FILE * file = fopen(arquivo, "rb");
                     if((fseek(file, 0, SEEK_END))<0){ printf("ERRO DURANTE fseek"); }
-                    int len = (int) ftell(file);                   
-                    mensagem = (char*) len;
-                    printf("Tamanho do arquivo: %d\n", len);
-                    //convertendo o valor do tamanho do arquivo (int) para ser enviado em uma mensagem no scoket(char)
-                    char tamanhoDoArquivoEmFormatoChar[32];
+                    
+                    uint32_t len = (int) ftell(file);
 
-                    sprintf(tamanhoDoArquivoEmFormatoChar, "%d", len);
-
-                    mensagem = tamanhoDoArquivoEmFormatoChar;
-
-                    //mensagem 4 - enviando o tamanho do arquivo
-                    send(conexao, mensagem, strlen(mensagem), 0);
+                    uint32_t converted_number = htonl(len);
+                    
+                    printf("[+] Tamanho do arquivo: %d", converted_number);
+                    write(_socket, &converted_number, sizeof(converted_number));
 
                     int fd = open(arquivo, O_RDONLY);
                     off_t offset = 0;
@@ -235,12 +279,16 @@ int main(int argc, char* argv[]) {
         char respostaServidor[MAX_MSG];
         int tamanho;
         char *mensagemEnviaNomeArquivoRequeridoParaServidor;
+        char *mensagem;
         if ((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
             perror("[-] Erro ao receber dados do cliente.");
             return NULL;
         }
         printf("[+] Servidor recebeu o nome do arquivo a ser gravado: %s.\n", respostaServidor);
-        
+
+        write(conexao, respostaServidor, strlen(respostaServidor));
+        printf("O servidor falou sobre ter recebido a mensagem do nome do arquivo: %s\n", respostaServidor);
+
         FILE *arquivoRecebido;
         arquivoRecebido = fopen(respostaServidor, "w");
         ssize_t len;
@@ -265,11 +313,34 @@ int main(int argc, char* argv[]) {
             write(conexao, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
             //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
             memset(respostaServidor, 0, sizeof respostaServidor);
-            read(conexao, respostaServidor, 1024);
 
-            int tamanhoDoArquivo = atoi(respostaServidor);
-            printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
-            quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
+            uint32_t received_int;
+            read(conexao, &received_int, sizeof(received_int));
+            printf("return status: %d", ntohl(received_int));
+            quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int);
+            printf("Tamanho do arquivo::: %d", quantidadeDeBytesRestanteParaSerGravado);
+            //read(conexao, respostaServidor, 1024);  
+
+            // printf("cliente disse que o tamanho eh: %s", respostaServidor);
+            // int tamanhoDoArquivo = atoi(respostaServidor);
+            // printf("\nTamanho do arquivo a ser copiado: %d \n", tamanhoDoArquivo);
+
+            
+
+            // int tamanhoDoArquivo = atoi(respostaServidor);
+            // write(conexao, tamanhoDoArquivo, strlen(tamanhoDoArquivo));
+            // printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
+            // memset(respostaServidor, 0, sizeof respostaServidor);
+            // if((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
+            //     printf("[-] Falha ao receber respostaNomeArquivo\n");
+            //     return -1;
+            // }
+            // if (strcmp(respostaServidor, "200") == 0){
+            //     quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
+            // }
+            // else{
+            //     printf("tamanho nao bate")
+            // }
 
         }else{
             fprintf(stderr, "[-] Arquivo não encontrado no cliente.\n");
@@ -343,7 +414,7 @@ int main(int argc, char* argv[]) {
         mensagem_post_ou_get[tamanho] = '\0';
         printf("O cliente falou sobre o Método: %s, tamanho %d\n", mensagem_post_ou_get, tamanho);
 
-        mensagem = "200";
+        mensagem = mensagem_post_ou_get;
         //mensagem 2 - enviando confirmação que arquivo existe do lado do cliente
         write(conexao, mensagem, strlen(mensagem));
         printf("O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: %s\n", mensagem);
