@@ -262,7 +262,6 @@ int main(int argc, char *argv[]) {
                     }
                     printf("Dados enviados do cliente para o servidor sobre o método get ou post %s\n", post_ou_get);
 
-                    memset(post_ou_get, 0, sizeof post_ou_get);
                     memset(respostaServidor, 0, sizeof respostaServidor);
 
                     if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
@@ -270,9 +269,9 @@ int main(int argc, char *argv[]) {
                         return -1;
                     }
 
-                    printf("Resposta recebida do servidor sobre o método get ou post: %s\n", respostaServidor);
+                    printf("Resposta recebida do servidor sobre o método get ou post: %s, comparacao: %d\n", respostaServidor, strcmp(respostaServidor, post_ou_get));
 
-                    if(strcmp(respostaServidor, "200") == 0){
+                    if(strcmp(respostaServidor, post_ou_get) == 0){
                         memset(respostaServidor, 0, sizeof respostaServidor);
 
                         if (send(_socket, mensagemEnviaNomeDiretorioParaServidor, strlen(mensagemEnviaNomeDiretorioParaServidor), 0) < 0) {
@@ -281,7 +280,6 @@ int main(int argc, char *argv[]) {
                         }
                         printf("Envia nome do diretório: %s\n", mensagemEnviaNomeDiretorioParaServidor);
 
-                        memset(mensagemEnviaNomeDiretorioParaServidor, 0, sizeof mensagemEnviaNomeDiretorioParaServidor);
                         memset(respostaServidor, 0, sizeof respostaServidor);
 
                         if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
@@ -291,7 +289,7 @@ int main(int argc, char *argv[]) {
 
                         printf("Resposta recebida do servidor sobre o nome do diretório: %s\n", respostaServidor);
 
-                        if(strcmp(respostaServidor, "200") == 0){
+                        if(strcmp(respostaServidor, mensagemEnviaNomeDiretorioParaServidor) == 0){
                             memset(respostaServidor, 0, sizeof respostaServidor);
                             //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
                             //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
@@ -302,13 +300,13 @@ int main(int argc, char *argv[]) {
                             printf("Cliente envia nome do arquivo: %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
                             memset(respostaServidor, 0, sizeof respostaServidor);
                             if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
-                            printf("Falha ao receber resposta\n");
-                            return -1;
+                                printf("Falha ao receber resposta\n");
+                                return -1;
                             }
 
                             printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
 
-                            if(strcmp(respostaServidor, "200") == 0){
+                            if(strcmp(respostaServidor, mensagemEnviaNomeArquivoRequeridoParaServidor) == 0){
                                 printf("Aqui...");
                                 memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
                                 memset(respostaServidor, 0, sizeof respostaServidor);
@@ -353,7 +351,6 @@ int main(int argc, char *argv[]) {
                                 fclose(arquivoRecebido);
                                 close(_socket);
                                 printf("Cliente finalizado com sucesso!\n");
-                                flag = 0;
                                 break;
                             }
                         }
