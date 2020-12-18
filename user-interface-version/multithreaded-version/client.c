@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
     int tamanho;
 
     void *connection_handler(void *_socket, char *arquivo, char *diretorio) {
-        char *mensagem;
+        char *mensagem, *tamanhoArquivo;
         char resposta[MAX_MSG];
         int tamanho;
         char diretorioArquivo[50];
@@ -111,16 +111,11 @@ int main(int argc, char *argv[]) {
         tamanho = strlen(arquivo);
 
         for(int i=0; i < tamanho; i++){
-            printf("[%c]\n", arquivo[i]);
             resposta[i] = arquivo[i];
         }
         resposta[tamanho] = '\0';
-        for(int i=0; i < tamanho; i++){
-            printf("[%c]\n", resposta[i]);
-        }
-        printf("resposta: %s, %s", resposta, arquivo);
 
-        if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Argumento invalido '%s'\n", diretorio);return -1;}
+        if(diretorioParaBuscarArquivo == NULL ){fprintf(stderr, "Diretório não existe: '%s'\n", diretorio);return -1;}
         
         char nomeArquivoAuxiliar[MAX_MSG];
         //fazendo cÃ³pia do nome do arquivo para variÃ¡vel auxiliar. tal variavel Ã© utilzada para localizar
@@ -137,7 +132,7 @@ int main(int argc, char *argv[]) {
 
                 stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação:%d\n", arquivoProcurado->d_name, resposta, strcmp(arquivoProcurado->d_name, resposta));
+                printf("Arquivo lido: %s, Arquivo procurado: %s, Comparação: %d\n", arquivoProcurado->d_name, resposta, strcmp(arquivoProcurado->d_name, resposta));
                 if (strcmp(arquivoProcurado->d_name, resposta) == 0) {//arquivo existe
                     printf("Arquivo existe lado do cliente");
                     closedir(diretorioParaBuscarArquivo);
@@ -171,17 +166,15 @@ int main(int argc, char *argv[]) {
                     strcat(abrirArquivo, nomeArquivoAuxiliar);
 
                     FILE * file = fopen(abrirArquivo, "rb");
-                    if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
-                    int len = (int) ftell(file);                   
-                    mensagem = (char*) len;
-                    printf("Tamanho do arquivo: %d\n", len);
-                    //convertendo o valor do tamanho do arquivo (int) para ser enviado em uma mensagem no scoket(char)
-                    char tamanhoDoArquivoEmFormatoChar[32];
-                    sprintf(tamanhoDoArquivoEmFormatoChar, "%d", len);
-                    mensagem = tamanhoDoArquivoEmFormatoChar;
 
-                    //mensagem 4 - enviando o tamanho do arquivo para o servidor
-                    send(_socket, mensagem, strlen(mensagem), 0);
+                    if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
+
+                    uint32_t len = (int) ftell(file);
+
+                    uint32_t converted_number = htonl(len);
+                    
+                    printf("[+] Tamanho do arquivo: %d", converted_number);
+                    write(_socket, &converted_number, sizeof(converted_number));
 
                     int fd = open(abrirArquivo, O_RDONLY);
                     off_t offset = 0;
@@ -193,10 +186,10 @@ int main(int argc, char *argv[]) {
                         exit(EXIT_FAILURE);
                     }
 
-                    while (((bytesEnviados = sendfile(_socket, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
-
-                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                    while (len > 0) {
+                        bytesEnviados = sendfile(_socket, fd, &offset, BUFSIZ);
                         len -= bytesEnviados;
+                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                         if (len <= 0) {
                             fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             printf("[+] Cliente enviou todos os dados do arquivo com sucesso.\n");
@@ -204,10 +197,10 @@ int main(int argc, char *argv[]) {
                             exit(0);
                         }
                     }
+                    
+                    //closedir(diretorioParaBuscarArquivo);
                     while(1){
                     }
-                    //closedir(diretorioParaBuscarArquivo);
-
                 }
             }if(arquivoProcurado==NULL) {
                     //enviando mensagem para o cliente de arquivo nao encontrado.
@@ -221,11 +214,13 @@ int main(int argc, char *argv[]) {
                     //caso contrario novas thread nao acessaram o diretorio passado em argv[2]]
                     diretorioParaBuscarArquivo = opendir(diretorio);
                     //
+                    while (1) {
+                    }
                     printf("[-] Cliente finalizando...\n");
-                    exit(0);
+                    close(_socket);
                     //closedir(diretorioParaBuscarArquivo);
-
             }
+
             if (diretorioParaBuscarArquivo != NULL) {
                 closedir(diretorioParaBuscarArquivo);
                 diretorioParaBuscarArquivo = NULL;
@@ -269,71 +264,100 @@ int main(int argc, char *argv[]) {
                     }
                     printf("Dados enviados %s\n", post_ou_get);
 
-                    memset(post_ou_get, 0, sizeof post_ou_get);
                     memset(respostaServidor, 0, sizeof respostaServidor);
 
-                    if (send(_socket, mensagemEnviaNomeDiretorioParaServidor, strlen(mensagemEnviaNomeDiretorioParaServidor), 0) < 0) {
-                        printf("Erro ao enviar mensagemEnviaNomeDiretorioParaServidor\n");
-                        return -1;
-                    }
-                    printf("Dados enviados %s\n", mensagemEnviaNomeDiretorioParaServidor);
-
-                    memset(mensagemEnviaNomeDiretorioParaServidor, 0, sizeof mensagemEnviaNomeDiretorioParaServidor);
-                    memset(respostaServidor, 0, sizeof respostaServidor);
-
-                    //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
-                    //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
-                    if (send(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
-                        printf("Erro ao enviar mensagemEnviaNomeArquivoRequeridoParaServidor\n");
-                        return -1;
-                    }
-                    printf("Dados enviados %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
-
-                    memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
-                    memset(respostaServidor, 0, sizeof respostaServidor);
-
-                    //Recebendo resposta do servidor
-                    //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
                     if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
                         printf("Falha ao receber resposta\n");
                         return -1;
                     }
 
-                    printf("Resposta recebida: %s\n", respostaServidor);
-                    if (strcmp(respostaServidor, "200") == 0) {
+                    printf("Resposta recebida do servidor sobre o método get ou post: %s, comparacao: %d\n", respostaServidor, strcmp(respostaServidor, post_ou_get));
 
-                        mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
-                        //mensagemEnviaNomeArquivoRequeridoParaServidor 3 enviado ok
-                        write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
-                        //mensagemEnviaNomeArquivoRequeridoParaServidor 4 recebendo o tamanho do arquivo;
+                    if(strcmp(respostaServidor, post_ou_get) == 0){
                         memset(respostaServidor, 0, sizeof respostaServidor);
-                        read(_socket, respostaServidor, 1024);
 
-                        int tamanhoDoArquivo = atoi(respostaServidor);
-                        printf("\nTamanho do arquivo a ser copiado: %s \n", respostaServidor);
-                        quantidadeDeBytesRestanteParaSerGravado = tamanhoDoArquivo;
+                        if (send(_socket, mensagemEnviaNomeDiretorioParaServidor, strlen(mensagemEnviaNomeDiretorioParaServidor), 0) < 0) {
+                            printf("Erro ao enviar diretório.\n");
+                            return -1;
+                        }
+                        printf("Envia nome do diretório: %s\n", mensagemEnviaNomeDiretorioParaServidor);
 
-                    }else{
-                        fprintf(stderr, "Arquivo não encontrado no servidor'%s'\n", diretorio);
-                        close(_socket);
-                        printf("Cliente finalizado com sucesso!\n");
-                        return 0;
-                    }
+                        memset(respostaServidor, 0, sizeof respostaServidor);
+
+                        if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
+                            printf("Falha ao receber resposta\n");
+                            return -1;
+                        }
+
+                        printf("Resposta recebida do servidor sobre o nome do diretório: %s\n", respostaServidor);
+
+                        if(strcmp(respostaServidor, mensagemEnviaNomeDiretorioParaServidor) == 0){
+                            //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
+                            //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
+                            if (send(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
+                                printf("Erro ao enviar nome do arquivo\n");
+                                return -1;
+                            }
+                            printf("Cliente envia nome do arquivo: %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
+
+                            memset(respostaServidor, 0, sizeof respostaServidor);
+                            
+                            if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
+                                printf("Falha ao receber resposta\n");
+                                return -1;
+                            }
+
+                            printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
+
+                            if(strcmp(respostaServidor, mensagemEnviaNomeArquivoRequeridoParaServidor) == 0){
+                                printf("Aqui...");
+                                memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
+                                memset(respostaServidor, 0, sizeof respostaServidor);
+
+                                //Recebendo resposta do servidor
+                                //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
+                                if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
+                                    printf("Falha ao receber resposta\n");
+                                    return -1;
+                                }
+
+                                printf("Resposta recebida: %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
+                                if (strcmp(respostaServidor, "200") == 0) {
+                                    // memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
+                                    // memset(respostaServidor, 0, sizeof respostaServidor);
+                                    printf("Aqui 2");
+                                    mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
+                                    printf("oka: %s", mensagemEnviaNomeArquivoRequeridoParaServidor);
+                                    write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
+
+                                    uint32_t received_int;
+                                    read(_socket, &received_int, sizeof(received_int));
+                                    quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int); 
+                                }else{
+                                    fprintf(stderr, "Arquivo não encontrado no servidor'%s'\n", diretorio);
+                                    close(_socket);
+                                    printf("Cliente finalizado com sucesso!\n");
+                                    return 0;
+                                }
 
 
-                    while (((len = recv(_socket, buffer, BUFSIZ, 0)) > 0)&& (quantidadeDeBytesRestanteParaSerGravado > 0)) {
-                        fwrite(buffer, sizeof (char), len, arquivoRecebido);
-                        quantidadeDeBytesRestanteParaSerGravado -= len;
-                        fprintf(stdout, "Recebidos %d bytes e aguardamos :- %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
-                        if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
-                            break;
+                                while (((len = recv(_socket, buffer, BUFSIZ, 0)) > 0)&& (quantidadeDeBytesRestanteParaSerGravado > 0)) {
+                                    fwrite(buffer, sizeof (char), len, arquivoRecebido);
+                                    quantidadeDeBytesRestanteParaSerGravado -= len;
+                                    fprintf(stdout, "Recebidos %d bytes e aguardamos :- %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
+                                    if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
+                                        break;
+                                    }
+                                }
+                                fclose(arquivoRecebido);
+                                shutdown(conexao, SHUT_RDWR);
+                                close(conexao);
+                                printf("Cliente finalizado com sucesso!\n");
+                                exit(0);
+                            }
                         }
                     }
-                    fclose(arquivoRecebido);
-                    close(_socket);
-                    printf("Cliente finalizado com sucesso!\n");
-                    flag = 0;
-                    break;
+                            
                 case(2):
                     if (send(_socket, post_ou_get, strlen(post_ou_get), 0) < 0) {
                         printf("Erro ao enviar post_ou_get\n");
@@ -341,24 +365,40 @@ int main(int argc, char *argv[]) {
                     }
                     printf("Dados enviados %s\n", post_ou_get);
 
-                    memset(post_ou_get, 0, sizeof post_ou_get);
                     memset(respostaServidor, 0, sizeof respostaServidor);
- 
-                    if (send(_socket, arquivo, strlen(arquivo), 0) < 0) {
-                        printf("Erro ao enviar nome do arquivo para o servidor.\n");
+
+                    if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
+                        printf("Falha ao receber resposta\n");
                         return -1;
                     }
-                    
-                    memset(respostaServidor, 0, sizeof respostaServidor);
 
-                    printf("O cliente enviou nome do arquivo %s para o servidor\n", arquivo);
-                
-                    connection_handler(_socket, arquivo, diretorio);
-                    flag = 0;
-                    break;            
-                }
+                    printf("Resposta recebida do servidor sobre o método get ou post: %s, comparacao: %d\n", respostaServidor, strcmp(post_ou_get, respostaServidor));
+
+                    if(strcmp(post_ou_get, respostaServidor) == 0){
+                        if (send(_socket, arquivo, strlen(arquivo), 0) < 0) {
+                            printf("Erro ao enviar nome do arquivo para o servidor.\n");
+                            return -1;
+                        }
+
+                        printf("O cliente enviou nome do arquivo %s para o servidor\n", arquivo);
+
+                        memset(respostaServidor, 0, sizeof respostaServidor);
+
+                        if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
+                            printf("Falha ao receber resposta\n");
+                            return -1;
+                        }
+
+                        printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
+                        if(strcmp(respostaServidor, arquivo) == 0){
+                            connection_handler(_socket, arquivo, diretorio);
+                            break;
+                        }            
+                    }                   
+            }
         }
     }
-
+    
     return 0;
+
 }

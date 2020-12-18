@@ -192,10 +192,6 @@ int main(int argc, char* argv[]) {
                             break;
                         }
                     }
-                    //closedir(diretorioParaBuscarArquivo);
-                    while (1) {
-                    }
-
                 }
             }if(arquivoProcurado==NULL) {
                     //enviando mensagem para o cliente de arquivo nao encontrado.
