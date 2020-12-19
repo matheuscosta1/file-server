@@ -98,6 +98,7 @@ int main(int argc, char *argv[]) {
     
     char *mensagemEnviaNomeArquivoRequeridoParaServidor, *mensagemEnviaNomeDiretorioParaServidor;
     char respostaServidor[MAX_MSG];
+    char *mensagemOkay = (char *) calloc(MAX_MSG, 1);
     int tamanho;
 
     void *connection_handler(void *_socket, char *arquivo, char *diretorio) {
@@ -262,7 +263,7 @@ int main(int argc, char *argv[]) {
                         printf("Erro ao enviar post_ou_get\n");
                         return -1;
                     }
-                    printf("Dados enviados %s\n", post_ou_get);
+                    printf("Cliente envia GET ou POST: %s\n", post_ou_get);
 
                     memset(respostaServidor, 0, sizeof respostaServidor);
 
@@ -310,10 +311,12 @@ int main(int argc, char *argv[]) {
                             printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
 
                             if(strcmp(respostaServidor, mensagemEnviaNomeArquivoRequeridoParaServidor) == 0){
-                                printf("Aqui...");
+                                
                                 memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
                                 memset(respostaServidor, 0, sizeof respostaServidor);
-
+                                mensagemOkay = "OK";
+                                printf("Enviando que o arquivo está okay: %s", mensagemOkay);
+                                write(_socket, mensagemOkay, strlen(mensagemOkay));
                                 //Recebendo resposta do servidor
                                 //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
                                 if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {

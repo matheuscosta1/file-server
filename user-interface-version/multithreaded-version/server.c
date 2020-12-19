@@ -76,10 +76,11 @@ int main(int argc, char* argv[]) {
     char *cliente_ip;
     int cliente_port;
 
-    void *connection_handler(void *_socket) {
-        char *mensagem, *mensagemArquivoExiste, *mensagemArquivoRequisitadoPeloCliente, *mensagemOkay;
-        char respostaNomeArquivo[MAX_MSG];
-        char resposta[MAX_MSG];
+    void connection_handler(void *_socket) {
+        char *mensagem = (char *) calloc(MAX_MSG, 1);
+        char *respostaNomeArquivo = (char *) calloc(MAX_MSG, 1);
+        char *resposta = (char *) calloc(MAX_MSG, 1);
+        char respostaArquivoOkay[MAX_MSG];
         int tamanho;
 
         // lendo dados enviados pelo cliente
@@ -96,16 +97,19 @@ int main(int argc, char* argv[]) {
         }
         resposta[tamanho] = '\0';
 
-        memset(respostaNomeArquivo, 0, sizeof respostaNomeArquivo);
+        printf("\nO cliente enviou para o servidor o arquivo: %s, %s\n", resposta, respostaNomeArquivo);
 
-        printf("\nO cliente falou sobre o arquivo: %s\n", resposta);
-
-        mensagemArquivoRequisitadoPeloCliente = resposta;
-        write(conexao, mensagemArquivoRequisitadoPeloCliente, strlen(mensagemArquivoRequisitadoPeloCliente));
-        printf("O servidor falou sobre ter recebido o nome do arquivo para o cliente: %s\n", mensagemArquivoRequisitadoPeloCliente);
-
-        char nomeArquivoAuxiliar[MAX_MSG];
-        strncpy(nomeArquivoAuxiliar, mensagemArquivoRequisitadoPeloCliente, MAX_MSG);
+        write(conexao, resposta, tamanho);
+        
+        printf("O servidor falou sobre ter recebido o nome do arquivo para o cliente: %s\n", resposta);
+        char *nomeArquivoAuxiliar = (char *) calloc(MAX_MSG, 1);
+        strncpy(nomeArquivoAuxiliar, resposta, MAX_MSG);
+        memset(resposta, 0, MAX_MSG);
+        if(tamanho = read(conexao, respostaArquivoOkay, MAX_MSG) < 0){
+            printf("Falha ao receber resposta\n");
+            return -1;
+        }
+        printf("A resposta é: %s", respostaArquivoOkay);
 
         if (diretorioParaBuscarArquivo != NULL) {
             
@@ -116,20 +120,18 @@ int main(int argc, char* argv[]) {
                 printf("Arquivo lido: %s, Arquivo procurado: %s\n", arquivoProcurado->d_name, nomeArquivoAuxiliar);
                 if (strcmp(arquivoProcurado->d_name, nomeArquivoAuxiliar) == 0) {
 
-                    //memset(respostaNomeArquivo, 0, sizeof(respostaNomeArquivo));
-                    printf("Chegou aquii.");
                     closedir(diretorioParaBuscarArquivo);
                     
                     arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
                     diretorioParaBuscarArquivo = opendir(respostaNomeDiretorio);
 
-                    mensagem = "200";
+                    strncpy(mensagem, "200", 3);
                     //mensagem 2 - enviando confirmação que arquivo existe
-                    write(conexao, mensagem, strlen(mensagem));
+                    write(conexao, mensagem, 3);
                     printf("Servidor falou pro cliente que o arquivo existe: %s\n", mensagem);
                     //mensagem 3 - recebendo que arquivo OK do cliente
-                    if(tamanho = read(conexao, resposta, strlen(resposta)) < 0){
+                    if(tamanho = read(conexao, resposta, MAX_MSG) < 0){
                         printf("Falha ao receber resposta\n");
                         return -1;
                     }
@@ -168,7 +170,9 @@ int main(int argc, char* argv[]) {
                         if (len <= 0) {
                             fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             close(conexao);
-                            //pthread_mutex_unlock(&lock);
+                            free(respostaNomeArquivo);
+                            free(resposta);
+                            free(nomeArquivoAuxiliar);
                             pthread_exit(NULL);
                             break;
                         }
@@ -200,7 +204,7 @@ int main(int argc, char* argv[]) {
                 diretorioParaBuscarArquivo = NULL;
             }
         }
-
+        
         if (strcmp(respostaNomeArquivo, "bye\n") == 0) {
             close(conexao);
             printf("[+] Servidor finalizado...\n");
@@ -355,7 +359,7 @@ int main(int argc, char* argv[]) {
                     return -1;
                 }
 
-                novaConexao = (int) malloc(1);
+                novaConexao = (int) malloc(4);
                 novaConexao = conexao;
                 //connection_handler(novaConexao);
                 connection_handler(novaConexao);
@@ -375,7 +379,7 @@ int main(int argc, char* argv[]) {
                     return -1;
                 }
 
-                novaConexao = (int) malloc(1);
+                novaConexao = (int) malloc(4);
                 novaConexao = conexao;
                 connection_client(novaConexao);
 
@@ -394,7 +398,7 @@ int main(int argc, char* argv[]) {
     int *new_sock;
     while ((conexao = accept(_socket, (struct sockaddr *)&cliente, &chilen))){
         pthread_t server_thread;
-        new_sock = malloc(1);
+        new_sock = malloc(4);
         *new_sock = conexao;
         pthread_create(&server_thread, NULL, main_handle, (void *) new_sock);
     }
