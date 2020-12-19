@@ -84,10 +84,12 @@ int main(int argc, char* argv[]) {
 
         // lendo dados enviados pelo cliente
         //mensagem 1 recebido nome do arquivo
+        // pthread_mutex_lock(&lock);
         if ((tamanho = read(conexao, respostaNomeArquivo, MAX_MSG)) < 0) {
             perror("Erro ao receber dados do cliente: ");
             return NULL;
         }
+        // pthread_mutex_unlock(&lock);
 
         for(int i=0; i < tamanho; i++){
             resposta[i] = respostaNomeArquivo[i];
@@ -140,7 +142,6 @@ int main(int argc, char* argv[]) {
                     FILE * file = fopen(arquivo, "rb");
                     if((fseek(file, 0, SEEK_END))<0){ printf("ERRO DURANTE fseek"); }
 
-
                     uint32_t len = (int) ftell(file);
 
                     uint32_t converted_number = htonl(len);
@@ -161,10 +162,13 @@ int main(int argc, char* argv[]) {
                     while (((bytesEnviados = sendfile(conexao, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
 
                         fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                        
                         len -= bytesEnviados;
+
                         if (len <= 0) {
                             fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
                             close(conexao);
+                            //pthread_mutex_unlock(&lock);
                             pthread_exit(NULL);
                             break;
                         }
@@ -353,13 +357,13 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
-
-                if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
-                    perror("[-] Não foi possível criar a thread.");
-                    return 1;
-                }
+                //connection_handler(novaConexao);
+                connection_handler(novaConexao);
+                // if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
+                //     perror("[-] Não foi possível criar a thread.");
+                //     return 1;
+                // }
                 puts("[+] GET: Conexão estabelecida");
-                free(fd_pointer);
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");
                     return 1;
@@ -373,14 +377,9 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
+                connection_client(novaConexao);
 
-                if (pthread_create(&thread, NULL, connection_client, (void*) novaConexao) < 0) {
-                    perror("[-] Não foi possível criar a thread.");
-                    return 1;
-                }
                 puts("[+] POST: Conexão estabelecida");
-
-                free(fd_pointer);
 
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");

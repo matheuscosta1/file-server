@@ -321,11 +321,12 @@ int main(int argc, char *argv[]) {
                                     return -1;
                                 }
 
-                                printf("Resposta recebida: %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
+                                printf("Resposta recebida da existencia do arquivo no servidor: status %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
                                 if (strcmp(respostaServidor, "200") == 0) {
                                     // memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
                                     // memset(respostaServidor, 0, sizeof respostaServidor);
                                     printf("Aqui 2");
+
                                     mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
                                     printf("oka: %s", mensagemEnviaNomeArquivoRequeridoParaServidor);
                                     write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
