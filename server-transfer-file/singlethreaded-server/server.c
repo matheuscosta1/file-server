@@ -78,6 +78,7 @@ int main(int argc, char* argv[]) {
         char *mensagem, *mensagemArquivoExiste;
         char respostaNomeArquivo[MAX_MSG];
         int tamanho;
+        char respostaArquivoOkay[MAX_MSG];
 
         // lendo dados enviados pelo cliente
         //mensagem 1 recebido nome do arquivo   
@@ -95,6 +96,12 @@ int main(int argc, char* argv[]) {
         char nomeArquivoAuxiliar[MAX_MSG];
 
         strncpy(nomeArquivoAuxiliar, respostaNomeArquivo, MAX_MSG);
+
+        if(tamanho = read(conexao, respostaArquivoOkay, MAX_MSG) < 0){
+            printf("Falha ao receber resposta\n");
+            return -1;
+        }
+        printf("A resposta é: %s", respostaArquivoOkay);
 
         if (diretorioParaBuscarArquivo != NULL) {
 
@@ -322,11 +329,9 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
-
-                if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
-                    perror("[-] Não foi possível criar a thread.");
-                    return 1;
-                }
+                
+                connection_handler(novaConexao);
+                
                 puts("[+] GET: Conexão estabelecida");
 
                 if (novaConexao < 0) {

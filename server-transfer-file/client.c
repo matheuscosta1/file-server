@@ -19,7 +19,6 @@
 #define GET 1
 #define POST 2
 
-
 typedef struct { char *key; int val; } key_value_struct;
 
 static key_value_struct helptable[] = {

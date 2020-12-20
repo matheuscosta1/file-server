@@ -55,8 +55,6 @@ int main(int argc, char* argv[]) {
     char respostaNomeArquivo[MAX_MSG];
     char respostaNomeDiretorio[MAX_MSG];
 
-    pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
-
     if (argc != 2) {
         fprintf(stderr, "Utilize a seguinte especificação:\n./server [Porta]\n");
         return -1;
@@ -69,42 +67,36 @@ int main(int argc, char* argv[]) {
     char* portaServidorAuxiliar = argv[1];
     int portaServidor = atoi(portaServidorAuxiliar);
 
-    int _socket, conexao, chilen, novaConexao;
+    int _socket, conexao, c, novaConexao;
     struct sockaddr_in servidor, cliente;
     
 
     char *cliente_ip;
     int cliente_port;
 
-    void connection_handler(void *_socket) {
-        char *mensagem = (char *) calloc(MAX_MSG, 1);
-        char *respostaNomeArquivo = (char *) calloc(MAX_MSG, 1);
-        char *resposta = (char *) calloc(MAX_MSG, 1);
-        char respostaArquivoOkay[MAX_MSG];
+    void *connection_handler(void *_socket) {
+        char *mensagem, *mensagemArquivoExiste;
+        char respostaNomeArquivo[MAX_MSG];
         int tamanho;
+        char respostaArquivoOkay[MAX_MSG];
 
         // lendo dados enviados pelo cliente
-        //mensagem 1 recebido nome do arquivo
-        // pthread_mutex_lock(&lock);
+        //mensagem 1 recebido nome do arquivo   
         if ((tamanho = read(conexao, respostaNomeArquivo, MAX_MSG)) < 0) {
             perror("Erro ao receber dados do cliente: ");
             return NULL;
         }
-        // pthread_mutex_unlock(&lock);
-
-        for(int i=0; i < tamanho; i++){
-            resposta[i] = respostaNomeArquivo[i];
-        }
-        resposta[tamanho] = '\0';
-
-        printf("\nO cliente enviou para o servidor o arquivo: %s, %s\n", resposta, respostaNomeArquivo);
-
-        write(conexao, resposta, tamanho);
+        respostaNomeArquivo[tamanho] = '\0';
+        printf("\nO cliente falou sobre o arquivo: %s\n", respostaNomeArquivo);
         
-        printf("O servidor falou sobre ter recebido o nome do arquivo para o cliente: %s\n", resposta);
-        char *nomeArquivoAuxiliar = (char *) calloc(MAX_MSG, 1);
-        strncpy(nomeArquivoAuxiliar, resposta, MAX_MSG);
-        memset(resposta, 0, MAX_MSG);
+        mensagem = respostaNomeArquivo;
+        write(conexao, mensagem, strlen(mensagem));
+        printf("O servidor falou sobre ter recebido o nome do arquivo para o cliente: %s\n", mensagem);
+
+        char nomeArquivoAuxiliar[MAX_MSG];
+
+        strncpy(nomeArquivoAuxiliar, respostaNomeArquivo, MAX_MSG);
+
         if(tamanho = read(conexao, respostaArquivoOkay, MAX_MSG) < 0){
             printf("Falha ao receber resposta\n");
             return -1;
@@ -112,30 +104,29 @@ int main(int argc, char* argv[]) {
         printf("A resposta é: %s", respostaArquivoOkay);
 
         if (diretorioParaBuscarArquivo != NULL) {
-            
+
             while ((arquivoProcurado = readdir(diretorioParaBuscarArquivo)) != NULL) {
-                
+
                 stat(arquivoProcurado->d_name, &mystat);
 
-                printf("Arquivo lido: %s, Arquivo procurado: %s\n", arquivoProcurado->d_name, nomeArquivoAuxiliar);
-                if (strcmp(arquivoProcurado->d_name, nomeArquivoAuxiliar) == 0) {
-
+                printf("Arquivo lido: %s, Arquivo procurado: %s\n", arquivoProcurado->d_name, respostaNomeArquivo);
+                if (strcmp(arquivoProcurado->d_name, respostaNomeArquivo) == 0) {
+                    printf("Chegou aquii.");
                     closedir(diretorioParaBuscarArquivo);
-                    
+
                     arquivoProcurado = NULL;
                     diretorioParaBuscarArquivo = NULL;
                     diretorioParaBuscarArquivo = opendir(respostaNomeDiretorio);
 
-                    strncpy(mensagem, "200", 3);
+                    mensagem = "200";
                     //mensagem 2 - enviando confirmação que arquivo existe
-                    write(conexao, mensagem, 3);
-                    printf("Servidor falou pro cliente que o arquivo existe: %s\n", mensagem);
+                    write(conexao, mensagem, strlen(mensagem));
+                    printf("Servidor falou pro cliente que o arquivo existe: %s", mensagem);
+
                     //mensagem 3 - recebendo que arquivo OK do cliente
-                    if(tamanho = read(conexao, resposta, MAX_MSG) < 0){
-                        printf("Falha ao receber resposta\n");
-                        return -1;
-                    }
-                    printf("Servidor recebeu do cliente confirmação do arquivo: %s\n", resposta);
+                    read(conexao, mensagemArquivoExiste, MAX_MSG);
+                    printf("Servidor falou pro cliente que o arquivo existe: %s", mensagemArquivoExiste);
+
 
                     char arquivo[1024]; 
                     strncpy(arquivo, respostaNomeDiretorio, 1024);
@@ -154,7 +145,7 @@ int main(int argc, char* argv[]) {
                     int fd = open(arquivo, O_RDONLY);
                     off_t offset = 0;
                     int bytesEnviados = 0;
-                    
+
                     if (fd == -1) {
                         fprintf(stderr, "Erro ao abrir arquivo: %s", strerror(errno));
 
@@ -164,16 +155,9 @@ int main(int argc, char* argv[]) {
                     while (((bytesEnviados = sendfile(conexao, fd, &offset, BUFSIZ)) > 0) && (len > 0)) {
 
                         fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
-                        
                         len -= bytesEnviados;
-
                         if (len <= 0) {
                             fprintf(stdout, "[+] Servidor enviou %d bytes do arquivo, offset agora : %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
-                            close(conexao);
-                            free(respostaNomeArquivo);
-                            free(resposta);
-                            free(nomeArquivoAuxiliar);
-                            pthread_exit(NULL);
                             break;
                         }
                     }
@@ -204,7 +188,7 @@ int main(int argc, char* argv[]) {
                 diretorioParaBuscarArquivo = NULL;
             }
         }
-        
+
         if (strcmp(respostaNomeArquivo, "bye\n") == 0) {
             close(conexao);
             printf("[+] Servidor finalizado...\n");
@@ -217,7 +201,6 @@ int main(int argc, char* argv[]) {
         int tamanho;
         char *mensagemEnviaNomeArquivoRequeridoParaServidor;
         char *mensagem;
-        
         if ((tamanho = read(conexao, respostaServidor, MAX_MSG)) < 0) {
             perror("[-] Erro ao receber dados do cliente.");
             return NULL;
@@ -225,8 +208,6 @@ int main(int argc, char* argv[]) {
         printf("[+] Servidor recebeu o nome do arquivo a ser gravado: %s.\n", respostaServidor);
 
         write(conexao, respostaServidor, strlen(respostaServidor));
-        pthread_mutex_unlock(&lock);
-
         printf("[+] O servidor falou sobre ter recebido a mensagem do nome do arquivo: %s\n", respostaServidor);
 
         FILE *arquivoRecebido;
@@ -256,24 +237,19 @@ int main(int argc, char* argv[]) {
 
             uint32_t received_int;
             read(conexao, &received_int, sizeof(received_int));
-            pthread_mutex_lock(&lock);
             quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int);
-            pthread_mutex_unlock(&lock);
         }else{
             fprintf(stderr, "[-] Arquivo não encontrado no cliente.\n");
         }
 
         while (((len = recv(conexao, buffer, BUFSIZ, 0)) > 0) && (quantidadeDeBytesRestanteParaSerGravado > 0)) {
             fwrite(buffer, sizeof (char), len, arquivoRecebido);
-            pthread_mutex_lock(&lock);
             quantidadeDeBytesRestanteParaSerGravado -= len;
-            pthread_mutex_unlock(&lock);
             fprintf(stdout, "[+] Recebidos %d bytes e aguardando: %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
             if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
                 break;
             }
         }
-        
         fclose(arquivoRecebido);
         close(conexao);
         if (strcmp(respostaServidor, "200") == 0){
@@ -301,42 +277,35 @@ int main(int argc, char* argv[]) {
     listen(_socket, 20);
 
     puts("[+] Aguardando por conexões...");
-    
-    chilen = sizeof(cliente);
-    
+    c = sizeof (struct sockaddr_in);
     pthread_t thread;
-    
     char *enviaMensagemParaCliente;
 
-    void *main_handle(void *fd_pointer){
-        int conexao = *(int *) fd_pointer;
+    while ((conexao = accept(_socket, (struct sockaddr *) &cliente, (socklen_t*) & c))){
         int tamanho;
         char respostaServidor[50];
         char *mensagemPostOuGet, *mensagemNomeDiretorio;
         // lendo dados enviados pelo cliente
         //mensagem 1 recebido nome do arquivo  
+
         cliente_ip = inet_ntoa(cliente.sin_addr);
         cliente_port = ntohs(cliente.sin_port);
         printf("[+] Cliente conectou: %s : [ %d ]\n", cliente_ip, cliente_port);
 
-        pthread_mutex_lock(&lock);
         if ((tamanho = read(conexao, mensagem_post_ou_get, MAX_MSG)) < 0) {
             perror("[-] Erro ao receber dados do cliente: ");
             return NULL;
         }
-        pthread_mutex_unlock(&lock);
+
         mensagem_post_ou_get[tamanho] = '\0';
         printf("[+] O cliente falou sobre o Método: %s, tamanho %d\n", mensagem_post_ou_get, tamanho);
 
-        pthread_mutex_lock(&lock);
         mensagemPostOuGet = mensagem_post_ou_get;
         //mensagem 2 - enviando confirmação que arquivo existe do lado do cliente
         write(conexao, mensagemPostOuGet, strlen(mensagemPostOuGet));
-        pthread_mutex_unlock(&lock);
         printf("[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: %s\n", mensagemPostOuGet);
 
         if(keyfromstring(mensagem_post_ou_get) == 1){
-            pthread_mutex_lock(&lock);
             if ((tamanho = read(conexao, respostaNomeDiretorio, MAX_MSG)) < 0) {
                 perror("[-] Erro ao receber dados do cliente: ");
                 return NULL;
@@ -347,7 +316,6 @@ int main(int argc, char* argv[]) {
             printf("\n[+] O cliente falou sobre nome do diretório: %s\n", respostaNomeDiretorio);
             mensagemNomeDiretorio = respostaNomeDiretorio;
             write(conexao, mensagemNomeDiretorio, strlen(mensagemNomeDiretorio));
-            pthread_mutex_unlock(&lock);
             printf("\n[+] O servidor falou sobre que recebeu o nome do diretório: %s\n", mensagemNomeDiretorio);
         }
 
@@ -359,15 +327,13 @@ int main(int argc, char* argv[]) {
                     return -1;
                 }
 
-                novaConexao = (int) malloc(4);
+                novaConexao = (int) malloc(1);
                 novaConexao = conexao;
-                //connection_handler(novaConexao);
+                
                 connection_handler(novaConexao);
-                // if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
-                //     perror("[-] Não foi possível criar a thread.");
-                //     return 1;
-                // }
+                
                 puts("[+] GET: Conexão estabelecida");
+
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");
                     return 1;
@@ -379,12 +345,13 @@ int main(int argc, char* argv[]) {
                     return -1;
                 }
 
-                novaConexao = (int) malloc(4);
+                novaConexao = (int) malloc(1);
                 novaConexao = conexao;
+
                 connection_client(novaConexao);
-
+                    
                 puts("[+] POST: Conexão estabelecida");
-
+            
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");
                     return 1;
@@ -393,14 +360,6 @@ int main(int argc, char* argv[]) {
             default:
                 printf("Waiting..."); break;
         }
-    }
-
-    int *new_sock;
-    while ((conexao = accept(_socket, (struct sockaddr *)&cliente, &chilen))){
-        pthread_t server_thread;
-        new_sock = malloc(4);
-        *new_sock = conexao;
-        pthread_create(&server_thread, NULL, main_handle, (void *) new_sock);
     }
     
 

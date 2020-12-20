@@ -1,0 +1,1111 @@
+[+] Bind efetuado com sucesso
+
+[+] Aguardando por conexões...
+[+] Cliente conectou: 127.0.0.1 : [ 45680 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 51478 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 57270 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 35094 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 40722 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 46442 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 52296 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 58040 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 35486 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 41356 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 47210 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 52980 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 58644 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 35702 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 41616 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 47430 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 53298 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 59228 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 36712 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensions QA.postman_collection.json, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: singlethread-example-post.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: extensions, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: .., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: collections, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: terapia, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled 1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: DocuSign_TRCE_-_MATHEUS_JOSE_DA_COSTA.pdf_P.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: ., Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: materias_feitas_ufu, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: jenkins-project, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: gestao-empresarial, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: academy, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: E_mail_de_Zup_IT_Innovation_Projeto_Auto_Conhecimento_Fase_1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_2.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: html-docs, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: trabalho-mds-diagrama-sequencia.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: sockets, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: variaveis_ambiente.zip, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: regex, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Fragment.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: engenharia-software, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Emissão_da_Carteira_de_Identidade_2ª_e_outras_vias_Estado_de_Minas.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-get1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Servidor falou pro cliente que o arquivo existe: 200
+Servidor recebeu do cliente confirmação do arquivo: OK
+[+] Tamanho do arquivo: -1818296320[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 8192 e os dados restantes = 40851
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 16384 e os dados restantes = 32659
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 24576 e os dados restantes = 24467
+[+] Servidor enviou 8192 bytes do arquivo, offset agora é: 32768 e os dados restantes = 16275
+[+] Servidor enviou 8083 bytes do arquivo, offset agora é: 40851 e os dados restantes = 8083
+[+] Servidor enviou 8083 bytes do arquivo, offset agora : 40851 e os dados restantes = 0
+[+] Cliente conectou: 127.0.0.1 : [ 42730 ]
+[+] O cliente falou sobre o Método: GET, tamanho 3
+[+] O servidor falou sobre ter recebido a mensagem de post ou get, para o cliente: GET
+
+[+] O cliente falou sobre nome do diretório: /home/matheus/Documents/
+
+[+] O servidor falou sobre que recebeu o nome do diretório: /home/matheus/Documents/
+
+O cliente enviou para o servidor o arquivo: multithreaded-example-get1.pdf, multithreaded-example-get1.pdf
+O servidor falou sobre ter recebido o nome do arquivo para o cliente: multithreaded-example-get1.pdf
+A resposta é: OK�X�Arquivo lido: programacao-orientada-objetos-2, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Pratica 07.odt, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Horários Disciplinas Remotas.xlsx, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: feedback_poo2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Untitled.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: mds.mdj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: message2.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: bug-engagement, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: dump_qa_20200902.sql, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: auto_conhecimento, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: lab05-mds.mfj, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: multithreaded-example-post1.pdf, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: account_fee_story, Arquivo procurado: multithreaded-example-get1.pdf
+Arquivo lido: Deploy Extensi
