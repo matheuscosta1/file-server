@@ -1,0 +1,38 @@
+Servidor single thread:
+
+GET /home/matheus/Documents/ apresentacao-singlethread.pdf
+POST /home/matheus/Documents/ apresentacao-singlethread.pdf
+
+rm multithreaded-time-post.txt && for i in {1..50}; do { echo "POST /home/matheus/Documents/ multithreaded-example-post1.pdf" | time ./client 127.0.0.1 4004 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-post.txt ; done & for i in {1..50}; do { echo "POST /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4004 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-post.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos multithread para o método POST é: "s/100}' multithreaded-time-post.txt
+rm multithreaded-time-get.txt && for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4007 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done & for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4007 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos multithread para o método GET é: "s/100}' multithreaded-time-get.txt
+
+
+Servidor multi thread:
+
+GET /home/matheus/Documents/ apresentacao-multithread.pdf
+POST /home/matheus/Documents/ apresentacao-multithread.pdf
+
+rm singlethreaded-time-get.txt && for i in {1..100}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4008 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> singlethreaded-time-get.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos singlethreaded para o método GET é: "s/100}' singlethreaded-time-get.txt
+rm singlethreaded-time-post.txt && for i in {1..100}; do { echo "POST /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4009 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> singlethreaded-time-post.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos singlethreaded para o método POST é: "s/100}' singlethreaded-time-post.txt
+
+
+
+
+
+$ rm multithreaded-time-get.txt && for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4007 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done & for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4007 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos multithread para o método GET é: "s/100}' multithreaded-time-get.txt
+
+[1] 1509205
+A execução de 100 operacões no servidor de arquivos multithread para o método GET é: 0,00132
+[1]  + 1509205 done       for i in {1..50}; do; { echo  | time ./client 127.0.0.1 4007 | { tail -n 0 >                                                                                                     
+
+# matheus @ zup-2744 in ~/Github/file-server/server-transfer-file-apresentacao on git:multithread x [19:20:12] 
+$ rm multithreaded-time-get.txt && for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4004 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done & for i in {1..50}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4004 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> multithreaded-time-get.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos multithread para o método GET é: "s/100}' multithreaded-time-get.txt
+
+[1] 1509738
+A execução de 100 operacões no servidor de arquivos multithread para o método GET é: 0,00235
+
+
+$ rm singlethreaded-time-get.txt && for i in {1..100}; do { echo "GET /home/matheus/Documents/ multithreaded-example-get1.pdf" | time ./client 127.0.0.1 4005 | { tail -n 0 >/dev/null;  }  } 2>&1 | awk '{print $10}' >> singlethreaded-time-get.txt ; done && awk '{s+=$0}END{print "A execução de 100 operacões no servidor de arquivos singlethreaded para o método GET é: "s/100}' singlethreaded-time-get.txt
+
+A execução de 100 operacões no servidor de arquivos singlethreaded para o método GET é: 0,26648
+

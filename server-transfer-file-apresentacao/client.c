@@ -19,7 +19,6 @@
 #define GET 1
 #define POST 2
 
-
 typedef struct { char *key; int val; } key_value_struct;
 
 static key_value_struct helptable[] = {
@@ -98,6 +97,7 @@ int main(int argc, char *argv[]) {
     
     char *mensagemEnviaNomeArquivoRequeridoParaServidor, *mensagemEnviaNomeDiretorioParaServidor;
     char respostaServidor[MAX_MSG];
+    char *mensagemOkay = (char *) calloc(MAX_MSG, 1);
     int tamanho;
 
     void *connection_handler(void *_socket, char *arquivo, char *diretorio) {
@@ -169,9 +169,9 @@ int main(int argc, char *argv[]) {
 
                     if((fseek(file, 0, SEEK_END))<0){printf("ERRO DURANTE fseek");}
 
-                    uint32_t len = (int) ftell(file);
+                    uint32_t tamanhoArquivoNoServidor = (int) ftell(file);
 
-                    uint32_t converted_number = htonl(len);
+                    uint32_t converted_number = htonl(tamanhoArquivoNoServidor);
                     
                     printf("[+] Tamanho do arquivo: %d", converted_number);
                     write(_socket, &converted_number, sizeof(converted_number));
@@ -186,12 +186,12 @@ int main(int argc, char *argv[]) {
                         exit(EXIT_FAILURE);
                     }
 
-                    while (len > 0) {
+                    while (tamanhoArquivoNoServidor > 0) {
                         bytesEnviados = sendfile(_socket, fd, &offset, BUFSIZ);
-                        len -= bytesEnviados;
-                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
-                        if (len <= 0) {
-                            fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, len);
+                        tamanhoArquivoNoServidor -= bytesEnviados;
+                        fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, tamanhoArquivoNoServidor);
+                        if (tamanhoArquivoNoServidor <= 0) {
+                            fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, tamanhoArquivoNoServidor);
                             printf("[+] Cliente enviou todos os dados do arquivo com sucesso.\n");
                             printf("[+] Cliente terminando...\n");
                             exit(0);
@@ -254,7 +254,7 @@ int main(int argc, char *argv[]) {
                     mensagemEnviaNomeDiretorioParaServidor = diretorio;
                     FILE *arquivoRecebido;
                     arquivoRecebido = fopen(arquivo, "w");
-                    ssize_t len;
+                    ssize_t tamanhoArquivoNoServidor;
                     char buffer[BUFSIZ];
                     int quantidadeDeBytesRestanteParaSerGravado;
 
@@ -262,7 +262,7 @@ int main(int argc, char *argv[]) {
                         printf("Erro ao enviar post_ou_get\n");
                         return -1;
                     }
-                    printf("Dados enviados %s\n", post_ou_get);
+                    printf("Cliente envia GET ou POST: %s\n", post_ou_get);
 
                     memset(respostaServidor, 0, sizeof respostaServidor);
 
@@ -310,10 +310,12 @@ int main(int argc, char *argv[]) {
                             printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
 
                             if(strcmp(respostaServidor, mensagemEnviaNomeArquivoRequeridoParaServidor) == 0){
-                                printf("Aqui...");
+                                
                                 memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
                                 memset(respostaServidor, 0, sizeof respostaServidor);
-
+                                mensagemOkay = "OK";
+                                printf("Enviando que o arquivo está okay: %s", mensagemOkay);
+                                write(_socket, mensagemOkay, strlen(mensagemOkay));
                                 //Recebendo resposta do servidor
                                 //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
                                 if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
@@ -321,15 +323,11 @@ int main(int argc, char *argv[]) {
                                     return -1;
                                 }
 
-                                printf("Resposta recebida: %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
+                                printf("Resposta recebida da existencia do arquivo no servidor: status %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
                                 if (strcmp(respostaServidor, "200") == 0) {
-                                    // memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
-                                    // memset(respostaServidor, 0, sizeof respostaServidor);
-                                    printf("Aqui 2");
                                     mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
                                     printf("oka: %s", mensagemEnviaNomeArquivoRequeridoParaServidor);
                                     write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
-
                                     uint32_t received_int;
                                     read(_socket, &received_int, sizeof(received_int));
                                     quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int); 
@@ -340,11 +338,10 @@ int main(int argc, char *argv[]) {
                                     return 0;
                                 }
 
-
-                                while (((len = recv(_socket, buffer, BUFSIZ, 0)) > 0)&& (quantidadeDeBytesRestanteParaSerGravado > 0)) {
-                                    fwrite(buffer, sizeof (char), len, arquivoRecebido);
-                                    quantidadeDeBytesRestanteParaSerGravado -= len;
-                                    fprintf(stdout, "Recebidos %d bytes e aguardamos :- %d bytes\n", len, quantidadeDeBytesRestanteParaSerGravado);
+                                while (((tamanhoArquivoNoServidor = recv(_socket, buffer, BUFSIZ, 0)) > 0) && (quantidadeDeBytesRestanteParaSerGravado > 0)) {
+                                    fwrite(buffer, sizeof (char), tamanhoArquivoNoServidor, arquivoRecebido);
+                                    quantidadeDeBytesRestanteParaSerGravado -= tamanhoArquivoNoServidor;
+                                    fprintf(stdout, "[+] Recebidos %d bytes e aguardamos :- %d bytes\n", tamanhoArquivoNoServidor, quantidadeDeBytesRestanteParaSerGravado);
                                     if (quantidadeDeBytesRestanteParaSerGravado <= 0) {
                                         break;
                                     }
