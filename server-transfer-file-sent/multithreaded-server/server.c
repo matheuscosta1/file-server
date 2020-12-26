@@ -355,12 +355,7 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(4);
                 novaConexao = conexao;
-                //connection_handler(novaConexao);
                 connection_handler(novaConexao, diretorioParaBuscarArquivo);
-                // if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
-                //     perror("[-] Não foi possível criar a thread.");
-                //     return 1;
-                // }
                 puts("[+] GET: Conexão estabelecida");
                 if (novaConexao < 0) {
                     perror("[-] Não foi possível estabelecer conexão com o cliente.");

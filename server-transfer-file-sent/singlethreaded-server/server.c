@@ -329,9 +329,8 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
-                
                 connection_handler(novaConexao);
-                
+
                 puts("[+] GET: Conexão estabelecida");
 
                 if (novaConexao < 0) {

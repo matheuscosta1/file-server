@@ -329,8 +329,10 @@ int main(int argc, char* argv[]) {
 
                 novaConexao = (int) malloc(1);
                 novaConexao = conexao;
-                
-                connection_handler(novaConexao);
+                if (pthread_create(&thread, NULL, connection_handler, (void*) novaConexao) < 0) {
+                    perror("[-] Não foi possível criar a thread.");
+                    return 1;
+                }
                 
                 puts("[+] GET: Conexão estabelecida");
 

@@ -20,7 +20,7 @@
 #define POST 2
 
 typedef struct { char *key; int val; } key_value_struct;
-struct timeval  tv1, tv2; 
+
 static key_value_struct helptable[] = {
     { "EXIT", EXIT }, { "GET", GET }, { "POST", POST }
 };
@@ -45,7 +45,7 @@ int keyfromstring(char *key)
  */
 
 int main(int argc, char *argv[]) {
-    gettimeofday(&tv1, NULL);
+
     struct dirent *arquivoProcurado;
     struct stat mystat;
 
@@ -194,8 +194,6 @@ int main(int argc, char *argv[]) {
                             fprintf(stdout, "[+] Cliente enviou %d bytes do arquivo, offset agora é: %d e os dados restantes = %d\n", bytesEnviados, (int)offset, tamanhoArquivoNoServidor);
                             printf("[+] Cliente enviou todos os dados do arquivo com sucesso.\n");
                             printf("[+] Cliente terminando...\n");
-                            //gettimeofday(&tv2, NULL); //pega o tempo até esse momento da execução do programa
-                            //printf("Tempo total de execucao: %f segundos.\n", (double) (tv2.tv_usec - tv1.tv_usec) / 1000000 + (double) (tv2.tv_sec - tv1.tv_sec)); //calcula tempo decorrido de execução
                             exit(0);
                         }
                     }
@@ -240,9 +238,6 @@ int main(int argc, char *argv[]) {
     char arquivo[50];
     char diretorio[50];
     int flag = 1;
-    FILE *arquivoRecebido;
-    char *okaymensagem = ;
-
     if(conexao == 0){
         printf("Seja bem vindo ao servidor de arquivos!\n");
         printf("Operações disponíveis para efetuar no servidor: POST/GET\n");
@@ -250,12 +245,14 @@ int main(int argc, char *argv[]) {
             
             printf("Use: [METODO POST OU GET] [DIRETORIO] [ARQUIVO]:\n\n");
             printf("input$ ");
-            strncpy(post_ou_get, "GET", MAX_MSG);
-            post_ou_get[strlen(post_ou_get)] = '\0';
+            scanf("%s %s %s", &post_ou_get, &diretorio, &arquivo);
             switch(keyfromstring(post_ou_get)){
                 case(0):
                     return -1;
                 case(1):
+                    mensagemEnviaNomeArquivoRequeridoParaServidor = arquivo;
+                    mensagemEnviaNomeDiretorioParaServidor = diretorio;
+                    FILE *arquivoRecebido;
                     arquivoRecebido = fopen(arquivo, "w");
                     ssize_t tamanhoArquivoNoServidor;
                     char buffer[BUFSIZ];
@@ -278,13 +275,12 @@ int main(int argc, char *argv[]) {
 
                     if(strcmp(respostaServidor, post_ou_get) == 0){
                         memset(respostaServidor, 0, sizeof respostaServidor);
-                        strncpy(diretorio, "/home/matheus/Documents/", MAX_MSG);
-                        diretorio[strlen(diretorio)] = '\0';
-                        if (send(_socket, diretorio, strlen(diretorio), 0) < 0) {
+
+                        if (send(_socket, mensagemEnviaNomeDiretorioParaServidor, strlen(mensagemEnviaNomeDiretorioParaServidor), 0) < 0) {
                             printf("Erro ao enviar diretório.\n");
                             return -1;
                         }
-                        printf("Envia nome do diretório: %s\n", diretorio);
+                        printf("Envia nome do diretório: %s\n", mensagemEnviaNomeDiretorioParaServidor);
 
                         memset(respostaServidor, 0, sizeof respostaServidor);
 
@@ -295,16 +291,14 @@ int main(int argc, char *argv[]) {
 
                         printf("Resposta recebida do servidor sobre o nome do diretório: %s\n", respostaServidor);
 
-                        if(strcmp(respostaServidor, diretorio) == 0){
-                            strncpy(arquivo, "multithreaded-example-get1.pdf", MAX_MSG);
-                            arquivo[strlen(arquivo)] = '\0';
+                        if(strcmp(respostaServidor, mensagemEnviaNomeDiretorioParaServidor) == 0){
                             //Enviando uma mensagemEnviaNomeArquivoRequeridoParaServidor
                             //mensagemEnviaNomeArquivoRequeridoParaServidor 1 enviando nome do arquivo.  
-                            if (send(_socket, arquivo, strlen(arquivo), 0) < 0) {
+                            if (send(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor), 0) < 0) {
                                 printf("Erro ao enviar nome do arquivo\n");
                                 return -1;
                             }
-                            printf("Cliente envia nome do arquivo: %s\n", arquivo);
+                            printf("Cliente envia nome do arquivo: %s\n", mensagemEnviaNomeArquivoRequeridoParaServidor);
 
                             memset(respostaServidor, 0, sizeof respostaServidor);
                             
@@ -315,14 +309,13 @@ int main(int argc, char *argv[]) {
 
                             printf("Resposta recebida do servidor sobre o nome do arquivo: %s\n", respostaServidor);
 
-                            if(strcmp(respostaServidor, arquivo) == 0){
+                            if(strcmp(respostaServidor, mensagemEnviaNomeArquivoRequeridoParaServidor) == 0){
                                 
-                                memset(arquivo, 0, sizeof arquivo);
+                                memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
                                 memset(respostaServidor, 0, sizeof respostaServidor);
                                 mensagemOkay = "OK";
                                 printf("Enviando que o arquivo está okay: %s", mensagemOkay);
                                 write(_socket, mensagemOkay, strlen(mensagemOkay));
-                                free(mensagemOkay);
                                 //Recebendo resposta do servidor
                                 //mensagemEnviaNomeArquivoRequeridoParaServidor 2 recebendo que arquivo existe   
                                 if((tamanho = read(_socket, respostaServidor, MAX_MSG)) < 0) {
@@ -332,13 +325,9 @@ int main(int argc, char *argv[]) {
 
                                 printf("Resposta recebida da existencia do arquivo no servidor: status %s, %d\n", respostaServidor, strcmp(respostaServidor, "200"));
                                 if (strcmp(respostaServidor, "200") == 0) {
-                                    // memset(mensagemEnviaNomeArquivoRequeridoParaServidor, 0, sizeof mensagemEnviaNomeArquivoRequeridoParaServidor);
-                                    // memset(respostaServidor, 0, sizeof respostaServidor);
-                                    printf("Aqui 2");
-
-                                    okaymensagem = "OK";
-                                    printf("oka: %s", okaymensagem);
-                                    write(_socket, okaymensagem, strlen(okaymensagem));
+                                    mensagemEnviaNomeArquivoRequeridoParaServidor = "OK";
+                                    printf("oka: %s", mensagemEnviaNomeArquivoRequeridoParaServidor);
+                                    write(_socket, mensagemEnviaNomeArquivoRequeridoParaServidor, strlen(mensagemEnviaNomeArquivoRequeridoParaServidor));
                                     uint32_t received_int;
                                     read(_socket, &received_int, sizeof(received_int));
                                     quantidadeDeBytesRestanteParaSerGravado = ntohl(received_int); 
@@ -348,7 +337,6 @@ int main(int argc, char *argv[]) {
                                     printf("Cliente finalizado com sucesso!\n");
                                     return 0;
                                 }
-
 
                                 while (((tamanhoArquivoNoServidor = recv(_socket, buffer, BUFSIZ, 0)) > 0) && (quantidadeDeBytesRestanteParaSerGravado > 0)) {
                                     fwrite(buffer, sizeof (char), tamanhoArquivoNoServidor, arquivoRecebido);

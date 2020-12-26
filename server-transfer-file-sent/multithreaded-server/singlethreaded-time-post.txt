@@ -1,0 +1,2000 @@
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,002 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 50% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 42% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 77% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 49% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 55% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 76% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 55% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 55% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 53% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 34% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 35% cpu 0,001 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 76% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 51% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 60% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 55% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 52% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 54% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 75% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 74% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 59% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 73% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 64% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 66% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 69% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 57% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 72% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 70% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 63% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 67% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 65% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 62% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 68% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 61% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 58% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 56% cpu 0,000 total
+zsh: no such file or directory: ./client
+./client 127.0.0.1 4001  0,00s user 0,00s system 71% cpu 0,000 total
